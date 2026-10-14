@@ -11,7 +11,7 @@ Written for this repository. Not vendored.
 
 1. `AGENTS.md` for voice, banned words, and unconfirmed facts.
 2. `blog-config.md` for paths and dates.
-3. `data/audiences.yaml` before changing an audience line. The home cards and the about page both render that file.
+3. `data/profile.yaml` before changing home page copy. The home template renders that file.
 
 The vendored `blog-writer`, `blog-editor`, `blog-keeper`, `blog-planner`, and `blog-marketer` skills are useful for essay workflow. Their `ADAPTATION.md` files say where they disagree with this site. This skill and `AGENTS.md` win.
 
@@ -23,27 +23,25 @@ Before commit, hand the draft to a separate unslop sub-agent that uses `.agents/
 
 | Page | File |
 | --- | --- |
-| Home hero | Front matter `idea`, `claim`, and `practice` in `content/_index.md` |
-| Home about blurb | Body of `content/_index.md` |
-| About | `content/about.md` |
-| Audience lines | `data/audiences.yaml` |
+| Home profile | `data/profile.yaml` |
+| Home meta description | Front matter `description` in `content/_index.md` |
 | Writing index | `content/writing/_index.md` |
 | Essays | `content/writing/<slug>.md` |
-| Contact intro | `content/contact.md` body |
-| Contact placeholders | `links` front matter in `content/contact.md` |
+| Contact form labels | `contact` in `data/profile.yaml` |
+| Contact endpoint | `params.contactFormEndpoint` in `hugo.yaml` |
 
 ## Rules
 
 - Plain, warm, honest. Name the seat, not the logo.
 - Never use: disrupt, revolutionize, game-changer, unlock, leverage, synergy, delve, 10x, thought leader.
-- No numbers, client names, or prices.
+- The figures and organizations on the home page are confirmed. Do not add new ones. Do not name the influenza vaccine company or the Chinese biotech.
 - Do not invent titles, years, degrees, schools, employers, URLs, or case studies.
 - Unconfirmed details stay visible as `[unconfirmed]` and get an HTML comment: `<!-- TODO: what Katherine still needs to confirm -->`.
 - Goldmark is configured with `unsafe: true` so those comments survive the build. Do not add raw HTML for anything else.
 - New essays start as `draft: true`. Production `hugo build` hides them. Do not flip `draft` off unless Katherine asks.
 - The example essay `content/writing/the-conversation-after-the-patent.md` is a shape, not her finished work. Replace it rather than polishing it into a fake memory.
-- Contact stays a list of placeholders. No email form. No guessed LinkedIn or Substack URL.
-- Internal links use root-relative paths such as `/about/`.
+- The contact form is the fields in `data/profile.yaml`. Do not put an email address in content, templates, or the endpoint value. See AGENTS.md.
+- Internal links use root-relative paths such as `/writing/`.
 
 ## Front matter for an essay
 

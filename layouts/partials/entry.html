@@ -1,0 +1,17 @@
+<article class="entry">
+  <p class="entry-dates">{{ .dates }}</p>
+  <div class="entry-main">
+    <h3>{{ .name }}</h3>
+    {{- with .title }}<p class="entry-title">{{ . }}</p>{{ end }}
+    {{- with .paragraphs }}
+    <div class="entry-copy">
+      {{- range . }}<p>{{ . }}</p>{{ end }}
+    </div>
+    {{- end }}
+    {{- with .points }}
+    <ul>
+      {{- range . }}<li>{{ . }}</li>{{ end }}
+    </ul>
+    {{- end }}
+  </div>
+</article>
