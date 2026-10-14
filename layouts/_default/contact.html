@@ -1,0 +1,19 @@
+{{ define "main" }}
+<article class="shell page">
+  <header class="page-head">
+    <h1>{{ .Title }}</h1>
+  </header>
+  <div class="prose">
+    {{ .Content }}
+  </div>
+  <ul class="contact-list">
+    {{- range .Params.links }}
+    <li id="{{ .name | urlize }}">
+      {{ printf "<!-- TODO: %s -->" .todo | safeHTML }}
+      <span class="contact-name">{{ .name }}</span>
+      <span class="unconfirmed">[unconfirmed]</span>
+    </li>
+    {{- end }}
+  </ul>
+</article>
+{{ end }}
