@@ -39,6 +39,7 @@ After editing, re-read the full post to check that:
 - The post still reads naturally from start to finish
 - All cross-reference links point to existing posts (verify with `Glob`)
 - Run `/blog-keeper` for comprehensive link and cross-reference validation across all posts
+- Before commit, hand the draft to a separate unslop sub-agent that uses `.agents/skills/unslop/SKILL.md` (non-negotiable rule in `AGENTS.md`). Do not unslop it yourself.
 
 ## Front Matter Conventions
 

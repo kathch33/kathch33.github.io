@@ -56,6 +56,7 @@ After writing:
 - Verify all front matter fields are present and correctly formatted
 - Check that cross-references point to existing posts (use `Glob` to verify)
 - Confirm no section restates what another section already covered
+- Before commit, hand the draft to a separate unslop sub-agent that uses `.agents/skills/unslop/SKILL.md` (non-negotiable rule in `AGENTS.md`). Do not unslop it yourself.
 
 ## Front Matter Conventions
 

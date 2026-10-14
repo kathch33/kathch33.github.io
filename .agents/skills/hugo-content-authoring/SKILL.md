@@ -15,6 +15,10 @@ Written for this repository. Not vendored.
 
 The vendored `blog-writer`, `blog-editor`, `blog-keeper`, `blog-planner`, and `blog-marketer` skills are useful for essay workflow. Their `ADAPTATION.md` files say where they disagree with this site. This skill and `AGENTS.md` win.
 
+## Workflow
+
+Before commit, hand the draft to a separate unslop sub-agent that uses `.agents/skills/unslop/SKILL.md` (non-negotiable rule in `AGENTS.md`). Do not unslop it yourself.
+
 ## Where copy lives
 
 | Page | File |
