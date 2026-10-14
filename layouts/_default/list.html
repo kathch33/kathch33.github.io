@@ -1,0 +1,29 @@
+{{ define "main" }}
+<div class="shell page">
+  <header class="page-head">
+    <h1>{{ .Title }}</h1>
+  </header>
+  {{- with .Content }}
+  <div class="prose">
+    {{ . }}
+  </div>
+  {{- end }}
+  {{- if .RegularPages }}
+  <ul class="post-list">
+    {{- range .RegularPages }}
+    <li>
+      <article>
+        <h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
+        <p class="meta"><time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "2 January 2006" }}</time></p>
+        {{- with .Description }}
+        <p>{{ . }}</p>
+        {{- end }}
+      </article>
+    </li>
+    {{- end }}
+  </ul>
+  {{- else }}
+  <p class="quiet">Nothing is published yet.</p>
+  {{- end }}
+</div>
+{{ end }}

@@ -1,0 +1,47 @@
+# Custom layouts live in /layouts. There is no theme and no theme submodule.
+baseURL: https://kathch33.github.io/
+locale: en-us
+title: Katherine Cheng
+enableRobotsTXT: true
+enableGitInfo: true
+disableKinds:
+  - taxonomy
+  - term
+
+minify:
+  tdewolff:
+    html:
+      keepComments: true
+
+params:
+  description: Good science gets stuck between the people who need each other.
+  author: Katherine Cheng
+
+menus:
+  main:
+    - name: About
+      pageRef: /about
+      weight: 10
+    - name: Writing
+      pageRef: /writing
+      weight: 20
+    - name: Contact
+      pageRef: /contact
+      weight: 30
+
+permalinks:
+  writing: /writing/:slug/
+
+caches:
+  images:
+    dir: :cacheDir/images
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+
+outputs:
+  home: [HTML, RSS]
+  section: [HTML, RSS]
+  page: [HTML]

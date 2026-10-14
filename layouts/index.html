@@ -1,0 +1,21 @@
+{{ define "main" }}
+<div class="shell home">
+  <section class="hero" aria-labelledby="hero-title">
+    <h1 id="hero-title">{{ .Params.idea }}</h1>
+    <p class="claim">{{ .Params.claim }}</p>
+    <p class="practice">{{ .Params.practice }}</p>
+  </section>
+
+  <section class="for" aria-labelledby="for-title">
+    <h2 id="for-title">Who this is for</h2>
+    {{ partial "audience-cards.html" . }}
+  </section>
+
+  <section class="about-teaser" aria-labelledby="about-teaser-title">
+    <h2 id="about-teaser-title">About</h2>
+    <div class="prose">
+      {{ .Content }}
+    </div>
+  </section>
+</div>
+{{ end }}

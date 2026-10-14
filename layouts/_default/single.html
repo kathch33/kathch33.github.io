@@ -1,0 +1,19 @@
+{{ define "main" }}
+<article class="shell page">
+  <header class="page-head">
+    <h1>{{ .Title }}</h1>
+    {{- if and (eq .Section "writing") (not .IsSection) }}
+    <p class="meta">
+      <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "2 January 2006" }}</time>
+      {{- if .Draft }} <span class="draft-flag">Draft. Not on the public site.</span>{{ end }}
+    </p>
+    {{- end }}
+  </header>
+  <div class="prose">
+    {{ .Content }}
+  </div>
+  {{- if eq .File.ContentBaseName "about" }}
+  {{ partial "audience-sections.html" . }}
+  {{- end }}
+</article>
+{{ end }}
