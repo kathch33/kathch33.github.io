@@ -2,6 +2,14 @@
 
 Living notes for anyone (human or agent) editing Katherine Cheng's site. Update this file when a preference becomes clear. `agent.md` is a symlink to this file.
 
+## Unslop is non-negotiable
+
+Every piece of content that goes onto the website must pass through a dedicated sub-agent whose only job is unslopping it with `.agents/skills/unslop/SKILL.md` before it is committed. That includes posts, pages, bios, headlines, descriptions, data files with copy, and front matter text.
+
+The authoring agent must not unslop its own draft. It hands the draft to a separate unslop sub-agent, applies that sub-agent's output, and keeps facts, names, numbers, and Katherine's voice intact.
+
+If the tool being used has no sub-agents, run the unslop pass as a separate, isolated step and say so in the pull request.
+
 ## Brand and voice
 
 Katherine Cheng is the founder of Kgence.ai.
@@ -68,13 +76,17 @@ The archetype leaves `draft: true`.
 
 ## Skills
 
-Vendored from [mdelapenya/blog-skills](https://github.com/mdelapenya/blog-skills) (MIT, Manuel de la Peña). `SKILL.md` files are unmodified. Read `ADAPTATION.md` in each folder before using them. They assume `content/posts/` and a different theme. This site uses `content/writing/` and custom layouts.
+Vendored from [mdelapenya/blog-skills](https://github.com/mdelapenya/blog-skills) (MIT, Manuel de la Peña). `SKILL.md` files are unmodified except one line in the blog-writer and blog-editor instruction workflows that points at the unslop rule above. Read `ADAPTATION.md` in each folder before using them. They assume `content/posts/` and a different theme. This site uses `content/writing/` and custom layouts.
 
 - `.agents/skills/blog-writer/`
 - `.agents/skills/blog-editor/`
 - `.agents/skills/blog-keeper/`
 - `.agents/skills/blog-planner/`
 - `.agents/skills/blog-marketer/`
+
+Vendored from [cursor/plugins](https://github.com/cursor/plugins) plugin `pstack` (MIT, Copyright (c) 2026 Lauren Tan). `SKILL.md` is copied verbatim. Read `SOURCE.md` in the folder.
+
+- `.agents/skills/unslop/`
 
 Written for this repo:
 
@@ -108,3 +120,4 @@ Do not force-push `master` unless Katherine explicitly asks.
 - 2026-10-14: No email form. Contact is link placeholders only until she supplies URLs.
 - 2026-10-14: No numbers, client names, or prices anywhere on the site.
 - 2026-10-14: Assumption, not a confirmed preference: the Actions time zone is `America/New_York` because the old site commits used US Eastern. Change it if she wants another zone.
+- 2026-10-14: Site copy is unslopped by a separate sub-agent using `.agents/skills/unslop/SKILL.md` before commit. The authoring agent does not unslop its own draft.
