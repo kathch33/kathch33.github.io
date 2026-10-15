@@ -51,22 +51,30 @@ logos:
     alt: "Moderna"
     width: 230
     height: 40
+    display: 28
   - src: "logos/bcg.svg"
     alt: "Boston Consulting Group"
     width: 1024
     height: 432
+    display: 32
   - src: "logos/hbs.svg"
     alt: "Harvard Business School"
-    width: 170
+    width: 713
     height: 198
+    display: 112
+    school: true
   - src: "logos/wharton.svg"
     alt: "The Wharton School"
     width: 864
     height: 217
+    display: 38
+    school: true
   - src: "logos/penn.svg"
     alt: "University of Pennsylvania"
     width: 248
     height: 115
+    display: 46
+    school: true
 
 work:
   eyebrow: "Selected work"

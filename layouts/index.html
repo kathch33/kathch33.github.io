@@ -22,7 +22,14 @@
     <p>{{ $p.about.signature }}</p>
     <p>{{ $p.about.today }}</p>
     <p>{{ $p.about.passion }}</p>
-    <p>{{ $p.about.addition }}</p>
+    <div class="about-education">
+      <p>{{ $p.about.addition }}</p>
+      <ul class="edu-marks">
+        {{- range where $p.logos "school" true }}
+        <li><img src="{{ .src | relURL }}" alt="{{ .alt }}" width="{{ .width }}" height="{{ .height }}" style="--logo: {{ .display }}px; --ratio: {{ printf "%.4f" (math.Div (float .width) (float .height)) }}"></li>
+        {{- end }}
+      </ul>
+    </div>
   </div>
 </section>
 
@@ -58,7 +65,7 @@
     </ul>
     <ul class="logo-wall">
       {{- range $p.logos }}
-      <li><img src="{{ .src | relURL }}" alt="{{ .alt }}" width="{{ .width }}" height="{{ .height }}"></li>
+      <li><img src="{{ .src | relURL }}" alt="{{ .alt }}" width="{{ .width }}" height="{{ .height }}" style="--logo: {{ .display }}px; --ratio: {{ printf "%.4f" (math.Div (float .width) (float .height)) }}"></li>
       {{- end }}
     </ul>
     <div class="proof-columns">

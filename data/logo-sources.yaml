@@ -13,7 +13,8 @@
 - name: Harvard Business School
   file: static/logos/hbs.svg
   page: https://commons.wikimedia.org/wiki/File:Harvard_Business_School.svg
-  origin: Harvard Business School arms, Wikimedia Commons
+  wordmark: https://commons.wikimedia.org/wiki/File:HBS_Horizontal_Logo.PNG
+  origin: Shield from the Commons coat of arms, with a vertical rule and a stacked HARVARD / BUSINESS / SCHOOL wordmark traced from the Commons horizontal logo. Ink on the page background.
 - name: The Wharton School
   file: static/logos/wharton.svg
   page: https://standards.wharton.upenn.edu/logo/

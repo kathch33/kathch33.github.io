@@ -18,7 +18,7 @@ Do not add a theme as a git submodule, a Hugo module that must be fetched at bui
 - `layouts/baseof.html` wraps every page except the 404.
 - `layouts/404.html` is a full document because Hugo does not apply `baseof` to it. Keep its head, header, and footer in step with the other pages.
 - `layouts/index.html` is the home profile. Copy comes from `hugo.Data.profile`.
-- The home page has no experience or education rows.
+- The home page has no experience timeline. Harvard Business School, Wharton, and Penn marks sit beside the about addition paragraph. They are not a resume row.
 - `layouts/_default/single.html` is an essay.
 - `layouts/_default/list.html` is the writing index.
 - `/about/` and `/contact/` are aliases of the home page.
@@ -31,7 +31,7 @@ Match the Kgence.ai reference: luxury, quiet, typographic. Fast. Accessible. Com
 - Green `#4a6b45` for italic display words and mono eyebrows. Teal `#1f6f8b` for links and hover only. On the black contact band, small green text uses `#9dba94` so it stays AA.
 - Display type is Cormorant Garamond. Body is Outfit at weight 300. Eyebrows and buttons are IBM Plex Mono.
 - Square corners. No shadows. No card grid with gaps. Numbered help blocks share hairlines. Exception: the LinkedIn post cards in the insights column are white, rounded, and lightly shadowed. Katherine asked for that look. Do not round or shadow the rest of the page.
-- Logos in `static/logos/` render at one height, in ink. Do not recolor them back to brand color.
+- Logos in `static/logos/` stay ink on the paper background. Do not recolor them to brand color. Size each mark by the height of the word a person recognizes (`display` in `data/profile.yaml`), not one shared CSS height. The HBS file is the shield plus a stacked wordmark. Wharton is the wordmark with its shield. The same three school marks sit beside the education paragraph.
 - Prose measure about 68ch. Help blocks become one column under 900px.
 - The only JavaScript is the contact form. No carousel. `scroll-behavior` is disabled under `prefers-reduced-motion`.
 - Visible keyboard focus. A skip link. `lang` on the html element. Tap targets at least 44px for the header, buttons, and footer link.
