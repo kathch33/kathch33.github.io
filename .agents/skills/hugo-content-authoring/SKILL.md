@@ -36,6 +36,7 @@ Before commit, hand the draft to a separate unslop sub-agent that uses `.agents/
 
 - Plain, warm, honest. Name the seat, not the logo.
 - Never use: disrupt, revolutionize, game-changer, unlock, leverage, synergy, delve, 10x, thought leader.
+- No dashes in visible page copy. No em dash, en dash, or hyphen as punctuation or as a list marker. Rewrite the sentence. Lists use a bullet or a `ul`. Hyphenated compounds only when a plain reword does not exist.
 - The home page is a short advisor page, not her resume. Selected work stays at a few cases drawn from confirmed facts. Do not add the timeline, internships, or a skills list back.
 - Do not name the influenza vaccine company or the biotech on the human papillomavirus license. Do not invent metrics, clients, quotes, or testimonials. The only approved headcount is more than 500 alumni leaders at the 2021 Harvard Business School Healthcare Alumni Conference. Do not add a Wharton healthcare alumni line. Add a talk in `data/speaking.yaml` or a paper in `data/press.yaml` only after the page is verified.
 - Do not invent titles, years, degrees, schools, employers, URLs, or case studies.

@@ -65,7 +65,7 @@ work:
     - number: "04"
       title: "A gene therapy business plan"
       problem: "A gene therapy program in a university lab needed a company."
-      done: "Katherine Cheng wrote the business plan for a Defense Advanced Research Projects Agency-funded adeno-associated virus gene therapy program. She wrote it in the Dr. Jim Wilson Lab at Penn Medicine from 2013 to 2014."
+      done: "Katherine Cheng wrote the business plan for an AAV gene therapy program. The Defense Advanced Research Projects Agency funded the program. She wrote the plan in the Dr. Jim Wilson Lab at Penn Medicine from 2013 to 2014."
       mattered: "The program is now REGENXBIO."
 
 help:

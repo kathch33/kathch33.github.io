@@ -559,13 +559,13 @@ h2 em {
 }
 
 .help-card li::before {
-  content: "";
+  content: "•";
   position: absolute;
   left: 0;
-  top: 0.85em;
-  width: 10px;
-  height: 1px;
-  background: var(--green);
+  top: 0;
+  color: var(--green);
+  font-size: 18px;
+  line-height: 1.7;
 }
 
 .contact-band {
