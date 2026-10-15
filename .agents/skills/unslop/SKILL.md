@@ -28,7 +28,7 @@ Rule numbers are stable ids that other skills cite. A removed rule leaves a gap.
 
 ### Style
 
-13. **No dashes in visible copy.** No em dash, no en dash, and no hyphen used as punctuation or as a list marker. Rewrite the sentence. A list uses a real bullet (•) or a proper `ul`, never a hyphen or a dash. Hyphenated compound words are allowed only when no plain wording exists. Prefer a reword. Parentheses stay out. If a thought needs separation, end the sentence or use a comma.
+13. **No dashes in visible copy.** No em dash, no en dash, and no hyphen used as punctuation or as a list marker. Rewrite the sentence. A list uses a real bullet (•) or a proper `ul`, never a hyphen or a dash. Hyphenated compound words are allowed only when no plain wording exists. Prefer a reword. The title "co-chair" is an allowed hyphenated exception. Do not rewrite it. Parentheses stay out. If a thought needs separation, end the sentence or use a comma.
 14. **Colon overuse.** Colons are fine before a list or example, not as mid-sentence connectors. "If you're coming from traditional automation: instead of registering event handlers, you describe conditions" adds nothing with the colon. Rewrite to let the point stand on its own without comparison framing. "Describing when the scheduler should fire works best as plain English." Same meaning, no crutch punctuation.
 15. **Boldface overuse.** Don't bold every proper noun or acronym.
 16. **Inline-header lists.** The tell is a bold label and colon that restates the line: "**Performance:** Performance improved...". Convert those to prose. A bold lead-in that ends in a period, names the item, and is followed by genuinely new detail ("**Schema in TypeScript.** Tables live in one file.") is fine, not a tell.
