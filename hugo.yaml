@@ -14,7 +14,7 @@ minify:
       keepComments: true
 
 params:
-  description: Good science gets stuck between the people who need each other.
+  description: Find the people who need your science.
   author: Katherine Cheng
   # FormSubmit AJAX URL. Placeholder until the alias from activation replaces it.
   # Do not put an email address here. See AGENTS.md.

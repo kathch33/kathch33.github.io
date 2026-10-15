@@ -1,17 +1,18 @@
-description: "Good science gets stuck between the people who need each other."
+description: "Find the people who need your science."
 
 hero:
   eyebrow: "Life sciences"
-  heading_before: "Good science gets"
-  heading_em: "stuck"
-  heading_after: "between the people who need each other."
+  heading_before: "Find the people who"
+  heading_em: "need"
+  heading_after: "your science."
   dek: "I've sat in every chair where science becomes a deal. I'll tell you what the other side is thinking."
   quiet: "Kgence.ai helps good science find the people who need it. The analysis is automated, and the relationships stay human."
   founder: "Founder, Kgence.ai"
   location: "Greater Boston"
   languages: "English and Mandarin"
-  primary_label: "Contact"
-  secondary_label: "Selected work"
+  primary_label: "Send me a note"
+  secondary_label: "Follow on LinkedIn"
+  secondary_url: "https://www.linkedin.com/in/kathxcheng/"
 
 about:
   eyebrow: "About"
@@ -21,6 +22,36 @@ about:
   today: "Today I am building Kgence.ai. I help life sciences teams put AI agents on repetitive work. People keep the judgment and the relationships."
   passion: "My passion is bridging the science with a partnership, a license, or a company."
   addition: "In addition, I wrote a paper with MIT Professor Andrew W. Lo and others on a portfolio approach to drug development in ovarian cancer. The Journal of Investment Management published it. I was co-chair of the Harvard Business School Healthcare Alumni Conference. I spoke at various conferences such as the Harvard Asia Business Conference and Penn HealthX. I earned an M.B.A. at Harvard Business School and was trained in the Vagelos Life Sciences and Management program at the University of Pennsylvania. I work in English and in Mandarin. I work with people in Boston, New York, Philadelphia, Shanghai, and Beijing."
+
+framework:
+  eyebrow: "How I work"
+  heading_before: "Every chair"
+  heading_em: "at the table"
+  intro: "I have sat in the scientist chair, the tech transfer chair, and the pharma and investor chair."
+  steps:
+    - number: "01"
+      title: "The chair you are in"
+      text: "You are the scientist, the tech transfer office, or the buyer."
+    - number: "02"
+      title: "The other side"
+      text: "I tell you what that chair is thinking. I have sat in it."
+    - number: "03"
+      title: "The ask"
+      text: "I help you get ready for a license, a meeting, or a look at the science."
+
+insights:
+  eyebrow: "LinkedIn"
+  heading_before: "Insights"
+  heading_em: "twice a week"
+  schedule: "I post on LinkedIn on Tuesdays and Thursdays, from 8 to 9 AM Eastern Time, about where hospital and university science is undervalued."
+  philosophy: "The posts are free, and they are the same thinking I use with the people who hire me."
+  offer: 'Comment "snapshot" on a post, or send me a note, to request a snapshot of your science, your portfolio, or your search area.'
+
+speak:
+  eyebrow: "Speaking"
+  heading_before: "Book Katherine"
+  heading_em: "to speak"
+  text: "I spoke at the Harvard Asia Business Conference, and I led a workshop at Penn HealthX."
 
 proof:
   places:
@@ -117,6 +148,7 @@ contact:
   heading_before: "Send me a"
   heading_em: "note"
   intro: "Leave your name, email, and question. I will reply to the address you write here."
+  reassurance: "Katherine reads every note personally."
   name_label: "Name"
   email_label: "Email"
   question_label: "Question"

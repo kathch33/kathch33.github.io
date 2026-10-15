@@ -285,6 +285,52 @@ h2 em {
   margin-top: 40px;
 }
 
+.section-cta {
+  margin-top: 56px;
+}
+
+.framework-text {
+  margin: 16px 0 0;
+  max-width: 36em;
+  color: var(--body);
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 1.7;
+}
+
+.intro + .intro {
+  margin-top: 16px;
+}
+
+.insights-offer {
+  color: var(--ink);
+}
+
+.speak {
+  border-top: 1px solid var(--line);
+  padding: 88px 0 120px;
+}
+
+.speak h2 {
+  margin: 0;
+  max-width: 10em;
+  font-size: clamp(40px, 5vw, 64px);
+  line-height: 0.95;
+}
+
+.speak-text {
+  margin: 24px 0 0;
+  max-width: 36em;
+  color: var(--body);
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 1.7;
+}
+
+#help {
+  padding-bottom: 88px;
+}
+
 .about h2.about-lead {
   margin: 0;
   max-width: 16em;
@@ -615,8 +661,17 @@ h2 em {
 
 .contact-band .intro,
 .contact-band .noscript,
-.contact-band .form-status {
+.contact-band .form-status,
+.contact-band .form-reassurance {
   color: var(--muted-on-dark);
+}
+
+.form-reassurance {
+  margin: 0;
+  max-width: 36em;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.7;
 }
 
 .contact-band .intro {
@@ -893,8 +948,17 @@ section[id] {
   }
 
   .section-end,
-  .contact-band {
+  .contact-band,
+  .speak {
     padding-bottom: 80px;
+  }
+
+  .speak {
+    padding-top: 64px;
+  }
+
+  #help {
+    padding-bottom: 64px;
   }
 
   .help-card {
