@@ -16,11 +16,11 @@ hero:
 about:
   eyebrow: "About"
   opening: "I'm a life sciences business development and strategy leader who helps scientists, universities, and buyers of science find each other."
-  scope: "For more than 12 years I have helped a result become a deal. I have done that work in the lab, at a consulting firm, in pharma business development, at a small business center, and in an internship at a drug company."
-  signature: "At Boston Consulting Group I was Project Leader in the Healthcare Practice from 2014 to 2021. I led commercial plans and the review of acquisitions in healthcare and in biopharma. At Moderna I worked in business development from 2021 to 2026 on individualized neoantigen therapy in oncology. Earlier, I wrote the business plan for an AAV gene therapy program in the Dr. Jim Wilson Lab at Penn Medicine, from 2013 to 2014. The Defense Advanced Research Projects Agency funded the program. The program is now REGENXBIO. At the Pennsylvania Small Business Development Center, from 2011 to 2013, I prepared the investor presentation for a therapeutic human papillomavirus vaccine. The presentation led to a license with a biotech. I interned at Vertex Pharmaceuticals in 2012."
+  scope: "I have helped a result become a deal. I have done that work in the lab, at a consulting firm, in pharma business development, at a small business center, and in an internship at a drug company."
+  signature: "At Boston Consulting Group I was Project Leader in the Healthcare Practice. I led commercial plans and the review of acquisitions in healthcare and in biopharma. At Moderna I worked in business development on individualized neoantigen therapy in oncology. Earlier, I wrote the business plan for an AAV gene therapy program in the Dr. Jim Wilson Lab at Penn Medicine. The Defense Advanced Research Projects Agency funded the program. The program is now REGENXBIO. At the Pennsylvania Small Business Development Center I prepared the investor presentation for a therapeutic human papillomavirus vaccine. The presentation led to a license with a biotech. I interned at Vertex Pharmaceuticals."
   today: "Today I am building Kgence.ai. I help life sciences teams put AI agents on repetitive work. People keep the judgment and the relationships."
   passion: "My passion is bridging the science with a partnership, a license, or a company."
-  addition: "In addition, I wrote a 2019 paper with Andrew W. Lo and others on a portfolio approach to drug development in ovarian cancer. The Journal of Investment Management published it. I was one of the chairs of the Harvard Business School Healthcare Alumni Conference in 2021. I spoke at the Harvard Asia Business Conference in 2024. I led a workshop at Penn HealthX in 2025. I earned an M.B.A. at Harvard Business School from 2016 to 2018. I trained in the Vagelos Life Sciences and Management program at the University of Pennsylvania from 2010 to 2014. I earned a bachelor of arts in biology and a bachelor of science in economics from the Wharton School. I work in English and in Mandarin. I work with people in Boston, New York, Chicago, and Philadelphia."
+  addition: "In addition, I wrote a paper with Andrew W. Lo and others on a portfolio approach to drug development in ovarian cancer. The Journal of Investment Management published it. I was one of the chairs of the Harvard Business School Healthcare Alumni Conference. I spoke at the Harvard Asia Business Conference. I led a workshop at Penn HealthX. I earned an M.B.A. at Harvard Business School. I trained in the Vagelos Life Sciences and Management program at the University of Pennsylvania. I earned a bachelor of arts in biology and a bachelor of science in economics from the Wharton School. I work in English and in Mandarin. I work with people in Boston, New York, Chicago, and Philadelphia."
 
 proof:
   places:
@@ -59,22 +59,22 @@ work:
     - number: "01"
       title: "Individualized neoantigen therapy"
       problem: "A cancer therapy built around one patient's antigens does not fit a standard product pitch."
-      done: "Katherine Cheng worked in business development for Moderna's individualized neoantigen therapy in oncology from 2021 to 2026."
+      done: "Katherine Cheng worked in business development for Moderna's individualized neoantigen therapy in oncology."
       mattered: "The Moderna program had both the science and the commercial work."
     - number: "02"
       title: "Biopharma strategy"
       problem: "A biopharma asset can lack a commercial plan. An acquisition can lack due diligence."
-      done: "Katherine Cheng was Project Leader in the Healthcare Practice at Boston Consulting Group from 2014 to 2021. She worked on commercial plans and due diligence for acquisitions."
+      done: "Katherine Cheng was Project Leader in the Healthcare Practice at Boston Consulting Group. She worked on commercial plans and the review of acquisitions."
       mattered: "The decision had a commercial plan and due diligence."
     - number: "03"
       title: "A therapeutic human papillomavirus vaccine"
       problem: "A therapeutic vaccine needed a partner, and the scientists needed an investor presentation."
-      done: "Katherine Cheng prepared an investor presentation for a therapeutic human papillomavirus vaccine at the Pennsylvania Small Business Development Center from 2011 to 2013."
+      done: "Katherine Cheng prepared an investor presentation for a therapeutic human papillomavirus vaccine at the Pennsylvania Small Business Development Center."
       mattered: "The presentation led to a license with a biotech."
     - number: "04"
       title: "A gene therapy business plan"
       problem: "A gene therapy program in a university lab needed a company."
-      done: "Katherine Cheng wrote the business plan for an AAV gene therapy program. The Defense Advanced Research Projects Agency funded the program. She wrote the plan in the Dr. Jim Wilson Lab at Penn Medicine from 2013 to 2014."
+      done: "Katherine Cheng wrote the business plan for an AAV gene therapy program. The Defense Advanced Research Projects Agency funded the program. She wrote the plan in the Dr. Jim Wilson Lab at Penn Medicine."
       mattered: "The program is now REGENXBIO."
 
 help:
