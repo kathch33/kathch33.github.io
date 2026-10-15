@@ -543,6 +543,43 @@ h2 em {
   line-height: 1.7;
 }
 
+.about-education {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  column-gap: 64px;
+  row-gap: 28px;
+  align-items: center;
+  margin-top: 22px;
+}
+
+.about-education p {
+  margin: 0;
+}
+
+.edu-marks {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 22px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.edu-marks li {
+  margin: 0;
+  max-width: 100%;
+  min-width: 0;
+}
+
+.edu-marks img {
+  display: block;
+  aspect-ratio: var(--ratio, 3);
+  width: calc(var(--logo, 48px) * var(--ratio, 3));
+  max-width: 100%;
+  height: auto;
+}
+
 .contact-band,
 .section {
   padding-top: 120px;
@@ -591,7 +628,7 @@ h2 em {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  gap: 36px 56px;
+  gap: 32px 48px;
   list-style: none;
   margin: 0;
   padding: 0;
@@ -600,13 +637,18 @@ h2 em {
 .logo-wall li {
   display: flex;
   align-items: center;
+  flex: 0 0 auto;
   margin: 0;
+  max-width: 100%;
+  min-width: 0;
 }
 
 .logo-wall img {
   display: block;
-  height: 44px;
-  width: auto;
+  aspect-ratio: var(--ratio, 3);
+  width: calc(var(--logo, 36px) * var(--ratio, 3));
+  max-width: 100%;
+  height: auto;
 }
 
 .proof-columns {
@@ -1114,7 +1156,8 @@ section[id] {
 @media (max-width: 900px) {
   .help-grid,
   .proof-columns,
-  .insights-layout {
+  .insights-layout,
+  .about-education {
     grid-template-columns: 1fr;
   }
 
@@ -1155,11 +1198,7 @@ section[id] {
   }
 
   .logo-wall {
-    gap: 28px 32px;
-  }
-
-  .logo-wall img {
-    height: 32px;
+    gap: 24px 28px;
   }
 
   .contact-band,
