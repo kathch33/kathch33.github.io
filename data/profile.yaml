@@ -100,8 +100,9 @@ help:
 
 contact:
   eyebrow: "Contact"
-  heading_before: "Send a"
+  heading_before: "Send me a"
   heading_em: "note"
+  heading_after: ", and I will reply"
   intro: "Leave your name, email, and question. I will reply to the address you write here."
   name_label: "Name"
   email_label: "Email"
