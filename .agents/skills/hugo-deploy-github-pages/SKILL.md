@@ -16,11 +16,13 @@ https://gohugo.io/host-and-deploy/host-on-github-pages/
 Keep that file aligned with the docs. The only intentional local changes are:
 
 - `on.push.branches` is `master`, because that is the default branch.
+- `pull_request` runs the build. The deploy job runs only when `github.ref` is `refs/heads/master`.
+- The Go setup step is omitted. This site has no `go.mod`. GitHub downloads every `uses` action during job setup, before `if` is evaluated, and a failed download of `actions/setup-go` failed the master deploy on 2026-10-15. Do not add that step back.
 - `TZ` is `America/New_York`. That is an assumption recorded in `AGENTS.md`, not a confirmed preference.
 
 Hugo in CI is `0.168.0` from `hugo_${HUGO_VERSION}_linux-amd64.tar.gz` (the standard build, not extended). Local preview should use the same version. `hugo.yaml` in the repo root sets the image cache to `:cacheDir/images`, which the docs ask for even when the site has no images.
 
-The workflow triggers on push to `master` and on `workflow_dispatch`. It does not deploy pull requests.
+The workflow builds on push to `master`, on pull requests, and on `workflow_dispatch`. It deploys only from `master`.
 
 ## Pages source
 

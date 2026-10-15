@@ -105,7 +105,7 @@ Found and not vendored:
 
 `.github/workflows/hugo.yaml` is the official Hugo workflow from the Hugo docs, with the branch set to `master` and the time zone set to `America/New_York`.
 
-GitHub Pages has to use source "GitHub Actions", not "Deploy from a branch" / `master` /. The workflow only runs on a push to `master` (or a manual run), so a pull request does not publish the site.
+GitHub Pages has to use source "GitHub Actions", not "Deploy from a branch" / `master` /. The workflow builds on a pull request and on a push to `master` (or a manual run). It publishes only from `master`, so a pull request does not publish the site. Do not add `actions/setup-go` back. This site has no `go.mod`, and GitHub still downloads every `uses` action during job setup.
 
 Do not force-push `master` unless Katherine explicitly asks.
 

@@ -1,11 +1,13 @@
 # Official Hugo GitHub Pages workflow from
 # https://gohugo.io/host-and-deploy/host-on-github-pages/
 # Branch is master (this repo's default). Time zone is America/New_York.
+# Go setup is omitted. This site has no go.mod, and GitHub downloads every
+# `uses` action during job setup even when a later `if` would skip the step.
+# A failed download of actions/setup-go aborted the master deploy on 2026-10-15.
 name: Build and deploy
 env:
   # Define tool versions
   DART_SASS_VERSION: 1.105.1
-  GO_VERSION: 1.27.2
   HUGO_VERSION: 0.168.0
   NODE_VERSION: 24.21.0
 
@@ -15,6 +17,7 @@ on:
   push:
     branches:
       - master
+  pull_request:
   workflow_dispatch:
 permissions:
   contents: read
@@ -44,13 +47,6 @@ jobs:
       - name: Create a local tools directory
         run: |
           mkdir -p "${HOME}/.local"
-
-      - name: Install Go
-        if: hashFiles('go.mod') != ''
-        uses: actions/setup-go@v7
-        with:
-          go-version: ${{ env.GO_VERSION }}
-          cache: false
 
       - name: Install Node.js
         if: hashFiles('package-lock.json') != ''
@@ -136,6 +132,8 @@ jobs:
           include-hidden-files: false
           path: ./public
   deploy:
+    # Pull requests build only. Publishing stays on master.
+    if: github.ref == 'refs/heads/master'
     runs-on: ubuntu-latest
     needs: build
     environment:
