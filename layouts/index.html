@@ -4,9 +4,9 @@
   <p class="eyebrow"><span class="eyebrow-rule" aria-hidden="true"></span><span>{{ $p.hero.eyebrow }}</span></p>
   <img class="portrait" src="{{ "images/katherine-cheng.png" | relURL }}" alt="Katherine Cheng" width="155" height="153">
   <div class="hero-text">
-    <h1 id="hero-title">{{ $p.hero.heading_before }} <em>{{ $p.hero.heading_em }}</em></h1>
+    <h1 id="hero-title">{{ $p.hero.heading_before }} <em>{{ $p.hero.heading_em }}</em> {{ $p.hero.heading_after }}</h1>
     <p class="dek">{{ $p.hero.dek }}</p>
-    <p class="hero-meta">{{ $p.hero.line }}</p>
+    <p class="hero-quiet">{{ $p.hero.quiet }}</p>
     <p class="hero-meta">{{ $p.hero.founder }}. {{ $p.hero.location }}. {{ $p.hero.languages }}.</p>
     <div class="actions">
       <a class="btn btn-solid" href="#contact">{{ $p.hero.primary_label }}</a>
@@ -60,6 +60,9 @@
     <article class="help-card" aria-labelledby="help-{{ .number }}">
       <p class="help-no">{{ .number }}</p>
       <h3 id="help-{{ .number }}">{{ .title }}</h3>
+      {{- with .note }}
+      <p class="help-note">{{ . }}</p>
+      {{- end }}
       <p class="help-line">{{ .pain }}</p>
       <p class="help-label">{{ $p.help.label }}</p>
       <ul>

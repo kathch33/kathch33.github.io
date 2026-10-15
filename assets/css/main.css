@@ -207,9 +207,9 @@ h2,
 
 .hero h1 {
   margin: 0;
-  max-width: 8.4em;
-  font-size: clamp(52px, 7.6vw, 104px);
-  line-height: 0.9;
+  max-width: 11em;
+  font-size: clamp(44px, 5.4vw, 76px);
+  line-height: 0.95;
 }
 
 h1 em,
@@ -263,8 +263,17 @@ h2 em {
   font-size: 20px;
 }
 
+.hero-quiet {
+  margin: 18px 0 0;
+  max-width: 36em;
+  color: var(--body);
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.7;
+}
+
 .hero-meta {
-  margin: 28px 0 0;
+  margin: 18px 0 0;
   max-width: 36em;
   font-size: 18px;
 }
@@ -501,6 +510,14 @@ h2 em {
   line-height: 1.05;
   letter-spacing: -0.02em;
   color: var(--ink);
+}
+
+.help-note {
+  margin: 10px 0 0;
+  color: var(--body);
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.5;
 }
 
 .help-line {
