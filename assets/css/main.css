@@ -350,6 +350,72 @@ h2 em {
   color: var(--ink);
 }
 
+.post-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 48px;
+  border-top: 1px solid var(--line);
+  border-left: 1px solid var(--line);
+}
+
+.post-card {
+  min-width: 0;
+  padding: 32px;
+  border-right: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
+
+.post-date {
+  margin: 0;
+  color: var(--green);
+  font-family: var(--mono);
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 0.16em;
+  line-height: 1.4;
+  text-transform: uppercase;
+}
+
+.post-hook {
+  margin: 16px 0 0;
+  max-width: 22em;
+  font-family: var(--serif);
+  font-weight: 400;
+  font-size: clamp(26px, 2.2vw, 34px);
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+  color: var(--ink);
+}
+
+.post-detail {
+  margin: 14px 0 0;
+  max-width: 38em;
+  color: var(--body);
+  font-family: var(--sans);
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.6;
+}
+
+.post-link {
+  display: inline-flex;
+  align-items: center;
+  min-height: 48px;
+  margin-top: 20px;
+  color: var(--teal);
+  font-family: var(--mono);
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 0.14em;
+  line-height: 1.4;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.post-link:hover {
+  color: var(--ink);
+}
+
 .intro-call {
   border-top: 1px solid var(--line);
   padding: 88px 0 120px;
@@ -987,7 +1053,8 @@ section[id] {
 
 @media (max-width: 900px) {
   .help-grid,
-  .proof-columns {
+  .proof-columns,
+  .post-grid {
     grid-template-columns: 1fr;
   }
 }
@@ -1040,7 +1107,8 @@ section[id] {
     padding-bottom: 64px;
   }
 
-  .help-card {
+  .help-card,
+  .post-card {
     padding: 28px 24px;
   }
 

@@ -48,6 +48,18 @@
   <p class="intro">{{ $p.insights.schedule }}</p>
   <p class="intro">{{ $p.insights.philosophy }}</p>
   <p class="intro insights-offer">{{ $p.insights.offer }}</p>
+  <div class="post-grid">
+    {{- range hugo.Data.linkedin_posts.posts }}
+    <article class="post-card">
+      <p class="post-date">{{ .date }}</p>
+      <h3 class="post-hook">{{ .hook }}</h3>
+      {{- with .detail }}
+      <p class="post-detail">{{ . }}</p>
+      {{- end }}
+      <a class="post-link" href="{{ .url }}" target="_blank" rel="noopener noreferrer" aria-label="Read on LinkedIn, opens in a new tab">Read on LinkedIn</a>
+    </article>
+    {{- end }}
+  </div>
   <div class="actions">
     <a class="btn btn-solid" href="{{ $p.linkedin.url }}" target="_blank" rel="noopener noreferrer" aria-label="{{ $p.hero.secondary_label }}, opens in a new tab">{{ $p.hero.secondary_label }}</a>
     <a class="btn btn-line" href="#contact">{{ $p.hero.primary_label }}</a>
