@@ -207,9 +207,9 @@ h2,
 
 .hero h1 {
   margin: 0;
-  max-width: 8.4em;
-  font-size: clamp(52px, 7.6vw, 104px);
-  line-height: 0.9;
+  max-width: 11em;
+  font-size: clamp(44px, 5.4vw, 76px);
+  line-height: 0.95;
 }
 
 h1 em,
@@ -263,8 +263,17 @@ h2 em {
   font-size: 20px;
 }
 
+.hero-quiet {
+  margin: 18px 0 0;
+  max-width: 36em;
+  color: var(--body);
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.7;
+}
+
 .hero-meta {
-  margin: 28px 0 0;
+  margin: 18px 0 0;
   max-width: 36em;
   font-size: 18px;
 }
@@ -274,6 +283,26 @@ h2 em {
   flex-wrap: wrap;
   gap: 16px;
   margin-top: 40px;
+}
+
+.about h2.about-lead {
+  margin: 0;
+  max-width: 16em;
+  font-family: var(--serif);
+  font-weight: 400;
+  font-size: clamp(32px, 4vw, 48px);
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+  color: var(--ink);
+}
+
+.about-body p {
+  margin: 22px 0 0;
+  max-width: 40em;
+  font-size: 18px;
+  font-weight: 300;
+  color: var(--body);
+  line-height: 1.7;
 }
 
 .contact-band,
@@ -483,6 +512,17 @@ h2 em {
   border-bottom: 1px solid var(--line);
 }
 
+.help-card-wide {
+  grid-column: 1 / -1;
+}
+
+.help-card-wide h3,
+.help-card-wide .help-note,
+.help-card-wide .help-line,
+.help-card-wide ul {
+  max-width: 40em;
+}
+
 .help-no {
   margin: 0;
   color: var(--green);
@@ -503,10 +543,33 @@ h2 em {
   color: var(--ink);
 }
 
+.help-note {
+  margin: 10px 0 0;
+  color: var(--body);
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.5;
+}
+
 .help-line {
   margin: 16px 0 0;
   font-size: 18px;
   color: var(--ink);
+}
+
+.help-label {
+  margin: 28px 0 0;
+  color: var(--green);
+  font-family: var(--mono);
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 0.16em;
+  line-height: 1.4;
+  text-transform: uppercase;
+}
+
+.help-label + ul {
+  margin-top: 16px;
 }
 
 .help-card ul {
@@ -527,13 +590,13 @@ h2 em {
 }
 
 .help-card li::before {
-  content: "";
+  content: "•";
   position: absolute;
   left: 0;
-  top: 0.85em;
-  width: 10px;
-  height: 1px;
-  background: var(--green);
+  top: 0;
+  color: var(--green);
+  font-size: 18px;
+  line-height: 1.7;
 }
 
 .contact-band {

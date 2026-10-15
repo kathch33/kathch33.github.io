@@ -22,6 +22,8 @@ Voice: a spare advisor. Confident, few words, outcome-focused. Plain and honest.
 
 Never use these words: disrupt, revolutionize, game-changer, unlock, leverage, synergy, delve, 10x, thought leader.
 
+No dashes in visible page copy. No em dash, no en dash, and no hyphen used as punctuation or as a list marker. Rewrite the sentence. A list uses a real bullet (•) or a proper `ul`. Hyphenated compound words are allowed only when no plain wording exists. Prefer a reword. The unslop skill enforces this as rule 13.
+
 Do not invent facts. If a detail is missing, leave a visible `[unconfirmed]` placeholder and an HTML comment that starts with `TODO:`.
 
 The home page publishes the biography she confirmed on 2026-10-14. Those names, dates, and figures are safe to repeat. Do not add organizations, titles, years, headcounts, or dollar figures beyond that page. Unnamed parties stay unnamed: the influenza vaccine company, and the Chinese biotech on the HPV vaccine license.
@@ -38,7 +40,7 @@ Known, and safe to say:
 - Harvard Business School, MBA, 2016 to 2018. University of Pennsylvania, Vagelos Life Sciences and Management program, 2010 to 2014: B.A. Biology from the College and B.S. Economics, Finance, from Wharton.
 - Publication with Dr. Andrew Lo, MIT, Journal of Investment Management, 2019. The title is on the home page.
 
-How she can help, in `data/profile.yaml`: scientists; hospitals and universities; pharma, biotech, and investors. One line and two or three outcomes each, tied to work she has actually done. Not a Kgence pitch.
+How she can help, in `data/profile.yaml`: scientists; hospitals and universities; pharma, biotech, and investors; and life sciences teams buried in manual work. For that last group she helps set up AI agents for the repetitive work. People keep the judgment and the relationships. One line and two or three outcomes each, tied to work she has actually done. Not a product pitch. Do not invent how many teams, hours saved, or client names.
 
 ## Site structure
 
@@ -80,7 +82,7 @@ Vendored from [mdelapenya/blog-skills](https://github.com/mdelapenya/blog-skills
 - `.agents/skills/blog-planner/`
 - `.agents/skills/blog-marketer/`
 
-Vendored from [cursor/plugins](https://github.com/cursor/plugins) plugin `pstack` (MIT, Copyright (c) 2026 Lauren Tan). `SKILL.md` is copied verbatim. Read `SOURCE.md` in the folder.
+Vendored from [cursor/plugins](https://github.com/cursor/plugins) plugin `pstack` (MIT, Copyright (c) 2026 Lauren Tan). `SKILL.md` matches upstream except rule 13, which now bans dashes in visible copy. Read `SOURCE.md` in the folder.
 
 - `.agents/skills/unslop/`
 
@@ -139,6 +141,9 @@ The form sends `_subject` `New question from kathch33.github.io`, `_template` `t
 - 2026-10-14: Site copy is unslopped by a separate sub-agent using `.agents/skills/unslop/SKILL.md` before commit. The authoring agent does not unslop its own draft.
 - 2026-10-14: The public page is an editorial profile in the Kgence visual system, not the earlier paper-and-clay layout and not a LinkedIn clone.
 - 2026-10-15: Katherine reviewed the full biography page and asked for a general advisor page. Selected work is a few anonymized cases from real facts. No resume timeline, internships, skills list, or published metrics she did not ask to show. No gradients. Logo row is monochrome ink. Do not invent testimonials.
-- 2026-10-15: Social proof is one quiet band. Cities are Boston, New York, Chicago, and Philadelphia. Speaking items live in `data/speaking.yaml`. Research lives in `data/press.yaml`. The 2021 conference line may say more than 500 alumni leaders. Do not add a Wharton healthcare alumni title or a vague network line. Do not invent other talks or papers.
+- 2026-10-15: Social proof is one quiet band. Cities are Boston, New York, Chicago, and Philadelphia. Speaking items live in `data/speaking.yaml`. Research lives in `data/press.yaml`. Do not add a Wharton healthcare alumni title or a vague network line. Do not invent other talks or papers.
+- 2026-10-15: Two figures may appear in visible copy: more than 12 years in the about section, and more than 500 alumni leaders at the 2021 Harvard Business School Healthcare Alumni Conference. Omit every other count, tenure range, volume, and issue number. A year may also appear as a date in `data/speaking.yaml` or `data/press.yaml`.
+- 2026-10-15: No dashes in visible page copy. No em dash, en dash, or hyphen used as punctuation or as a list marker. Rewrite the sentence. Lists use a bullet or a `ul`. Hyphenated compounds only when a plain reword does not exist.
+- 2026-10-15: Home copy uses Katherine's lines. Hero: "Good science gets stuck between the people who need each other." Sub: "I've sat in every chair where science becomes a deal. I'll tell you what the other side is thinking." The quiet Kgence.ai line may sit under the hero. Selected work is the problem, what was done, and why it mattered. Audience cards talk to one person. Name the urgent problem first, then "How I help" with two or three short outcomes. A fourth card is for life sciences teams buried in manual work. She helps them set up AI agents for the repetitive tasks. People keep the judgment and the relationships. The about section is first person and executive: an opening "I'm a ___ who helps ___," the span of settings, named seats, a "Today" line, "My passion is bridging," and an "In addition" line. Use only verified facts. The Vertex internship may appear as one sentence there. Do not add a timeline, a skills list, deal sizes, team sizes, or P&L figures. Contact heading is "Send me a note."
 - 2026-10-14: The contact form is on the home page. No email address in the built site. The FormSubmit alias still has to be pasted into `hugo.yaml` after she activates it.
 - 2026-10-14: The portrait is cropped from her LinkedIn header screenshot. The banner is the green-to-teal circuit image. Both live in `static/images/`.

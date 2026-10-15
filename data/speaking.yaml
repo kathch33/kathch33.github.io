@@ -1,14 +1,14 @@
 # Add another item under items. Leave links empty when there is no page.
 eyebrow: "Speaking and leadership"
 items:
-  - title: "Healthcare panel, 30th Harvard Asia Business Conference"
+  - title: "Healthcare panel, Harvard Asia Business Conference"
     detail: "I spoke at Harvard Business School, in Klarman Hall, on March 31, 2024."
     links: []
   - title: "Penn HealthX"
-    detail: "I led an interactive case-study workshop on an early-stage biotech startup in 2025."
+    detail: "In 2025 I led an interactive case study workshop at Penn HealthX on an early biotech startup."
     links:
       - label: "LinkedIn"
         url: "https://www.linkedin.com/posts/kathxcheng_last-year-at-penn-healthx-i-led-an-interactive-activity-7468310922592231424-E-0T"
   - title: "Harvard Business School Healthcare Alumni Conference"
-    detail: "I was co-chair in 2021. More than 500 alumni leaders attended."
+    detail: "I was one of the chairs of the Harvard Business School Healthcare Alumni Conference in 2021. More than 500 alumni leaders attended."
     links: []
