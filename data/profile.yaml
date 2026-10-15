@@ -59,9 +59,9 @@ logos:
     display: 32
   - src: "logos/hbs.svg"
     alt: "Harvard Business School"
-    width: 713
-    height: 198
-    display: 112
+    width: 756
+    height: 220
+    display: 78
     school: true
   - src: "logos/wharton.svg"
     alt: "The Wharton School"
