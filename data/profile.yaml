@@ -72,11 +72,6 @@ work:
       problem: "A therapeutic vaccine needed a partner, and the scientists needed an investor presentation."
       done: "Katherine Cheng prepared an investor presentation for a therapeutic human papillomavirus vaccine at the Pennsylvania Small Business Development Center."
       mattered: "The presentation led to a license with a biotech."
-    - number: "04"
-      title: "A gene therapy business plan"
-      problem: "A gene therapy program in a university lab needed a company."
-      done: "Katherine Cheng wrote the business plan for an AAV gene therapy program. The Defense Advanced Research Projects Agency funded the program. She wrote the plan in the Dr. Jim Wilson Lab at Penn Medicine."
-      mattered: "The program is now REGENXBIO."
 
 help:
   eyebrow: "Who it is for"
