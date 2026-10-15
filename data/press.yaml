@@ -1,0 +1,9 @@
+# Add another item under items to extend the strip. Leave url empty when there is no page.
+# The 2019 paper is listed on https://joim.com/issue/2019q2/ with Katherine Cheng as a co-author.
+# That article sits behind a login, so url points at the public SSRN page for the same paper.
+eyebrow: "Writing and research"
+items:
+  - title: "A Portfolio Approach to Accelerate Therapeutic Innovation in Ovarian Cancer"
+    source: "Journal of Investment Management published the paper in 2019."
+    note: "I am a co-author, with Andrew Lo."
+    url: "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3286330"

@@ -28,6 +28,7 @@ Before commit, hand the draft to a separate unslop sub-agent that uses `.agents/
 | Writing index | `content/writing/_index.md` |
 | Essays | `content/writing/<slug>.md` |
 | Contact form labels | `contact` in `data/profile.yaml` |
+| Writing and research strip | `data/press.yaml` |
 | Contact endpoint | `params.contactFormEndpoint` in `hugo.yaml` |
 
 ## Rules
@@ -35,7 +36,7 @@ Before commit, hand the draft to a separate unslop sub-agent that uses `.agents/
 - Plain, warm, honest. Name the seat, not the logo.
 - Never use: disrupt, revolutionize, game-changer, unlock, leverage, synergy, delve, 10x, thought leader.
 - The home page is a short advisor page, not her resume. Selected work stays at a few cases drawn from confirmed facts. Do not add the timeline, internships, or a skills list back.
-- Do not name the influenza vaccine company or the biotech on the human papillomavirus license. Do not invent metrics, clients, quotes, or testimonials.
+- Do not name the influenza vaccine company or the biotech on the human papillomavirus license. Do not invent metrics, clients, quotes, or testimonials. The Wharton healthcare line is participation, not a title. Add a research link in `data/press.yaml` only after the page is verified.
 - Do not invent titles, years, degrees, schools, employers, URLs, or case studies.
 - Unconfirmed details stay visible as `[unconfirmed]` and get an HTML comment: `<!-- TODO: what Katherine still needs to confirm -->`.
 - Goldmark is configured with `unsafe: true` so those comments survive the build. Do not add raw HTML for anything else.

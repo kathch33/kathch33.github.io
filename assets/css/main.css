@@ -285,9 +285,39 @@ h2 em {
   padding-bottom: 120px;
 }
 
-.logo-band {
+.proof {
   border-top: 1px solid var(--line);
-  padding: 48px 0 56px;
+  padding: 56px 0 64px;
+}
+
+.places {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px 0;
+  list-style: none;
+  margin: 0 0 40px;
+  padding: 0;
+  color: var(--ink);
+  font-family: var(--mono);
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 0.18em;
+  line-height: 1.4;
+  text-transform: uppercase;
+}
+
+.places li {
+  display: inline-flex;
+  align-items: center;
+  margin: 0;
+}
+
+.places li:not(:last-child)::after {
+  content: "·";
+  margin: 0 0.85em;
+  color: var(--body);
+  letter-spacing: 0;
 }
 
 .logo-wall {
@@ -312,9 +342,54 @@ h2 em {
   width: auto;
 }
 
-.credential {
+.proof-note {
   margin: 36px 0 0;
-  max-width: 42em;
+  max-width: 46em;
+  font-size: 16px;
+}
+
+.press {
+  margin-top: 48px;
+}
+
+.press .eyebrow {
+  margin-bottom: 16px;
+}
+
+.press-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.press-list li + li {
+  margin-top: 28px;
+}
+
+.press-list a,
+.press-title {
+  color: var(--ink);
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 1.5;
+  text-underline-offset: 0.18em;
+}
+
+.press-list a {
+  color: var(--teal);
+}
+
+.press-list a:hover {
+  color: var(--ink);
+}
+
+.press-title {
+  margin: 0;
+}
+
+.press-meta {
+  margin: 8px 0 0;
+  max-width: 62ch;
   font-size: 16px;
 }
 

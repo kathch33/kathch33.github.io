@@ -11,7 +11,13 @@ hero:
   primary_label: "Contact"
   secondary_label: "Selected work"
 
-credential: "I was Co-chair of the Harvard Business School Healthcare Alumni Conference in 2021."
+proof:
+  places:
+    - "Boston"
+    - "New York"
+    - "Chicago"
+    - "Philadelphia"
+  leadership: "I was co-chair of the Harvard Business School Healthcare Alumni Conference in 2021. I take part in the Harvard Business School healthcare alumni network and the Wharton healthcare alumni network."
 
 logos:
   - src: "logos/moderna.svg"
@@ -56,7 +62,6 @@ work:
       title: "Gene therapy, from the lab to a company"
       seat: "I worked in the Dr. Jim Wilson Lab at Penn Medicine from 2013 to 2014."
       text: "I wrote the business plan for an adeno-associated virus gene therapy program. The Defense Advanced Research Projects Agency funded the program. The program is now REGENXBIO."
-  paper: "With Dr. Andrew Lo at the Massachusetts Institute of Technology, I wrote \"A Portfolio Approach to Accelerate Therapeutic Innovation in Ovarian Cancer.\" Journal of Investment Management published it in 2019."
 
 help:
   eyebrow: "How I can help"

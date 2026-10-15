@@ -14,14 +14,36 @@
   </div>
 </section>
 
-<section class="logo-band" aria-label="Organizations">
+<section class="proof" aria-label="Background">
   <div class="shell">
+    <ul class="places">
+      {{- range $p.proof.places }}
+      <li>{{ . }}</li>
+      {{- end }}
+    </ul>
     <ul class="logo-wall">
       {{- range $p.logos }}
       <li><img src="{{ .src | relURL }}" alt="{{ .alt }}" width="{{ .width }}" height="{{ .height }}"></li>
       {{- end }}
     </ul>
-    <p class="credential">{{ $p.credential }}</p>
+    <p class="proof-note">{{ $p.proof.leadership }}</p>
+    {{- with hugo.Data.press }}
+    <div class="press">
+      <p class="eyebrow"><span class="eyebrow-rule" aria-hidden="true"></span><span>{{ .eyebrow }}</span></p>
+      <ul class="press-list">
+        {{- range .items }}
+        <li>
+          {{- if .url }}
+          <a href="{{ .url }}">{{ .title }}</a>
+          {{- else }}
+          <p class="press-title">{{ .title }}</p>
+          {{- end }}
+          <p class="press-meta">{{ .source }} {{ .note }}</p>
+        </li>
+        {{- end }}
+      </ul>
+    </div>
+    {{- end }}
   </div>
 </section>
 
@@ -40,7 +62,6 @@
     </article>
     {{- end }}
   </div>
-  <p class="work-note">{{ $p.work.paper }}</p>
 </section>
 
 <section class="section section-end shell" id="help" aria-labelledby="help-title">
