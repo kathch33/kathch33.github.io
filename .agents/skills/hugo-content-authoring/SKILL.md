@@ -34,7 +34,8 @@ Before commit, hand the draft to a separate unslop sub-agent that uses `.agents/
 
 - Plain, warm, honest. Name the seat, not the logo.
 - Never use: disrupt, revolutionize, game-changer, unlock, leverage, synergy, delve, 10x, thought leader.
-- The figures and organizations on the home page are confirmed. Do not add new ones. Do not name the influenza vaccine company or the Chinese biotech.
+- The home page is a short advisor page, not her resume. Selected work stays at a few cases drawn from confirmed facts. Do not add the timeline, internships, or a skills list back.
+- Do not name the influenza vaccine company or the biotech on the human papillomavirus license. Do not invent metrics, clients, quotes, or testimonials.
 - Do not invent titles, years, degrees, schools, employers, URLs, or case studies.
 - Unconfirmed details stay visible as `[unconfirmed]` and get an HTML comment: `<!-- TODO: what Katherine still needs to confirm -->`.
 - Goldmark is configured with `unsafe: true` so those comments survive the build. Do not add raw HTML for anything else.

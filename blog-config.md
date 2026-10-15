@@ -19,7 +19,7 @@ Settings for the vendored Hugo blog skills in `.agents/skills/`. Voice and facts
 
 - **Posts directory:** content/writing/
 - **Talks directory:** none
-- **Images directory:** static/images/ (banner.jpg and katherine-cheng.png are supplied)
+- **Images directory:** static/images/ (katherine-cheng.png is the portrait). Logos are static/logos/. Do not use banner.jpg on the page.
 
 ## Publication settings
 

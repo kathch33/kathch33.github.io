@@ -18,7 +18,7 @@ Do not add a theme as a git submodule, a Hugo module that must be fetched at bui
 - `layouts/baseof.html` wraps every page except the 404.
 - `layouts/404.html` is a full document because Hugo does not apply `baseof` to it. Keep its head, header, and footer in step with the other pages.
 - `layouts/index.html` is the home profile. Copy comes from `hugo.Data.profile`.
-- `layouts/partials/entry.html` is one experience or education row.
+- The home page has no experience or education rows.
 - `layouts/_default/single.html` is an essay.
 - `layouts/_default/list.html` is the writing index.
 - `/about/` and `/contact/` are aliases of the home page.
@@ -27,14 +27,15 @@ Do not add a theme as a git submodule, a Hugo module that must be fetched at bui
 
 Match the Kgence.ai reference: luxury, quiet, typographic. Fast. Accessible. Comfortable on a phone.
 
-- Background `#f7f5f3`, beige panels `#ebe7e0`, ink `#121212`, body `#6b6b6b`, hairline `#dcd8d2`.
+- Background `#f7f5f3`, ink `#121212`, body `#6b6b6b`, hairline `#dcd8d2`. Flat color only. No gradients, including the old circuit banner.
 - Green `#4a6b45` for italic display words and mono eyebrows. Teal `#1f6f8b` for links and hover only. On the black contact band, small green text uses `#9dba94` so it stays AA.
-- Display type is Cormorant Garamond. Body is Outfit at weight 300. Eyebrows, chips, and buttons are IBM Plex Mono.
+- Display type is Cormorant Garamond. Body is Outfit at weight 300. Eyebrows and buttons are IBM Plex Mono.
 - Square corners. No shadows. No card grid with gaps. Numbered help blocks share hairlines.
+- Logos in `static/logos/` render at one height, in ink. Do not recolor them back to brand color.
 - Prose measure about 68ch. Help blocks become one column under 900px.
 - The only JavaScript is the contact form. No carousel. `scroll-behavior` is disabled under `prefers-reduced-motion`.
 - Visible keyboard focus. A skip link. `lang` on the html element. Tap targets at least 44px for the header, buttons, and footer link.
-- The portrait and banner in `static/images/` are supplied. Do not swap in a stock image.
+- The portrait in `static/images/katherine-cheng.png` is supplied. Do not swap in a stock image. Do not put `banner.jpg` on the page.
 - Headings stay in order. The home `h1` is the positioning line. Inner pages use the page title as `h1`.
 
 ## When changing templates

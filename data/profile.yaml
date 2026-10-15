@@ -1,151 +1,89 @@
-description: "Katherine Cheng bridges science and business in life sciences, after business development at Moderna and healthcare work at BCG."
+description: "Katherine Cheng advises scientists, universities, and the people who buy science. She has done business development at Moderna and healthcare strategy at Boston Consulting Group."
 
 hero:
-  eyebrow: "Life sciences and human-led agentic AI"
-  heading_before: "Bridging science and"
-  heading_em: "business"
-  dek: "I am building to solve a big problem in life sciences."
+  eyebrow: "Life sciences"
+  heading_before: "Where science becomes a"
+  heading_em: "deal"
+  dek: "I advise scientists, universities, and the people who buy science."
   founder: "Founder, Kgence.ai"
   location: "Greater Boston"
-  languages: "Bilingual in English and Mandarin Chinese"
+  languages: "English and Mandarin"
   primary_label: "Contact"
-  secondary_label: "How I can help"
-  markers:
-    - "Moderna BD"
-    - "BCG"
-    - "Harvard Business School"
-    - "Penn"
+  secondary_label: "Selected work"
 
-about:
-  eyebrow: "About"
-  heading_before: "Sixteen years of"
+credential: "I was Co-chair of the Harvard Business School Healthcare Alumni Conference in 2021."
+
+logos:
+  - src: "logos/moderna.svg"
+    alt: "Moderna"
+    width: 230
+    height: 40
+  - src: "logos/bcg.svg"
+    alt: "Boston Consulting Group"
+    width: 1024
+    height: 432
+  - src: "logos/hbs.svg"
+    alt: "Harvard Business School"
+    width: 170
+    height: 198
+  - src: "logos/wharton.svg"
+    alt: "The Wharton School"
+    width: 864
+    height: 217
+  - src: "logos/penn.svg"
+    alt: "University of Pennsylvania"
+    width: 248
+    height: 115
+
+work:
+  eyebrow: "Selected work"
+  heading_before: "Selected"
   heading_em: "work"
-  paragraphs:
-    - "I have 16 years of deep domain expertise in biology and life sciences, and I work with high AI agency. That work has covered biotech, life sciences, finance, biology, AI, pharma operations, next-generation sequencing, and personalized medicine."
-    - "I believe human-led agentic AI will create more opportunities in life sciences. It increases the flow of information and makes markets more efficient. It gives people more room to create."
-    - "I care about healthcare businesses, biotech startups, and work that is both business and science."
+  cases:
+    - number: "01"
+      title: "Individualized neoantigen therapy"
+      seat: "I worked in business development in oncology at Moderna from 2021 to 2026."
+      text: "I left to build."
+    - number: "02"
+      title: "Biopharma strategy"
+      seat: "I was Project Leader in the Healthcare Practice at Boston Consulting Group from 2014 to 2021."
+      text: "I led project work on healthcare and biopharma strategy, including commercial plans and due diligence for acquisitions."
+    - number: "03"
+      title: "A therapeutic human papillomavirus vaccine"
+      seat: "I worked at the Pennsylvania Small Business Development Center from 2011 to 2013."
+      text: "An investor presentation I prepared for a therapeutic human papillomavirus vaccine led to a license with a biotech."
+    - number: "04"
+      title: "Gene therapy, from the lab to a company"
+      seat: "I worked in the Dr. Jim Wilson Lab at Penn Medicine from 2013 to 2014."
+      text: "I wrote the business plan for an adeno-associated virus gene therapy program. The Defense Advanced Research Projects Agency funded the program. The program is now REGENXBIO."
+  paper: "With Dr. Andrew Lo at the Massachusetts Institute of Technology, I wrote \"A Portfolio Approach to Accelerate Therapeutic Innovation in Ovarian Cancer.\" Journal of Investment Management published it in 2019."
 
 help:
   eyebrow: "How I can help"
   heading_before: "How I can"
   heading_em: "help"
-  intro: "What I bring, from work I have already done."
   audiences:
     - number: "01"
       title: "Scientists"
-      context: ""
+      line: "I turn a finding into something a buyer can act on."
       points:
-        - "I translate the science into a market story and an investor story."
-        - "I show where the work fits in a buyer's portfolio."
-        - "I prepare you for a licensing conversation, and for forming a company."
-        - "I have done this with scientists at Penn Medicine and the Wistar Institute."
-        - "In Dr. Jim Wilson's lab, I wrote the business plan for a company around a DARPA-funded adeno-associated virus gene therapy program, now REGENXBIO. The plan covered trial design, positioning from physician interviews, an investor thesis, a valuation, and a pitch to more than 200 experts and executives."
+        - "I write the market story and the investor story."
+        - "I place the work in a buyer's portfolio."
+        - "I prepare the path to a license or a new company."
     - number: "02"
       title: "Hospitals and universities"
-      context: "Tech transfer"
+      line: "I sort disclosures by whether they can support a deal."
       points:
-        - "I triage disclosures by commercial potential and position the ones that can support a deal."
-        - "I frame an asset in the language pharma business development uses when it buys."
-        - "I help with partnering strategy and with the outreach that follows."
-        - "I structure deals. That comes from business development at Moderna, including Individualized Neoantigen Therapy, INT, in oncology."
-        - "I know the academic side of the transfer from the lab to a partner. That comes from the Wilson lab and from advising scientists at Penn Medicine and the Wistar Institute."
+        - "I help identify which assets are worth a partner's time."
+        - "I describe an asset in the language pharma business development uses."
+        - "I help set the structure for the partnering conversation."
     - number: "03"
       title: "Pharma, biotech, and investors"
-      context: ""
+      line: "I bring academic science before it is a pitch."
       points:
-        - "I can bring academic and hospital innovation early, already filtered."
-        - "At BCG I did due diligence on 20 biotech companies for an acquisition-driven portfolio expansion, with a total shareholder return model."
-        - "With Dr. Andrew Lo at MIT, I wrote on a portfolio approach to therapeutic innovation in ovarian cancer, published in the Journal of Investment Management in 2019."
-        - "I work in English and Mandarin. An investor presentation I prepared for a therapeutic human papillomavirus vaccine led to a license with a Chinese biotech."
-        - "Inside the companies, I wrote a five-year commercial plan for a top global influenza vaccine company. I managed a deal budget of more than $250 million at Moderna Therapeutics."
-
-experience:
-  eyebrow: "Experience"
-  heading_before: "Roles I have"
-  heading_em: "held"
-  roles:
-    - name: "Moderna"
-      title: "Business Development"
-      dates: "August 2021 to April 2026"
-      paragraphs:
-        - "I worked on Individualized Neoantigen Therapy, INT, for oncology. I left to build."
-      points: []
-    - name: "HBS Healthcare Alumni Association"
-      title: "Co-Chair of the HBS Healthcare Alum Conference"
-      dates: "2021"
-      paragraphs:
-        - "I led the largest Harvard Business School alumni conference, with more than 500 global healthcare leaders, while working full time."
-      points: []
-    - name: "Boston Consulting Group"
-      title: "Project Leader, Healthcare Practice, biopharma specialist"
-      dates: "August 2014 to August 2021"
-      paragraphs: []
-      points:
-        - "I wrote a five-year commercial plan for a top global influenza vaccine company."
-        - "I did due diligence on 20 biotech companies for an acquisition-driven portfolio expansion, with a total shareholder return model."
-        - "I worked on flexible medical technology sales teams for key hospital accounts."
-        - "I worked on a biotech-like organization design inside large pharma."
-        - "I worked on a savings model that tracked $75 million in cost reduction across 16 departments."
-    - name: "Moderna Therapeutics"
-      title: "Business Development and Finance"
-      dates: "Summer 2017"
-      paragraphs:
-        - "I managed a cross-department deal budget of more than $250 million for the lead personalized cancer vaccine program. The work included a plan to license RNA assets in immuno-oncology."
-      points: []
-    - name: "Penn Medicine"
-      title: "Gene Therapy Program, Dr. Jim Wilson Lab"
-      dates: "2013 to 2014"
-      paragraphs:
-        - "I wrote the business plan to form a company around a DARPA-funded adeno-associated virus gene therapy program, now REGENXBIO. The work included trial design, positioning from physician interviews, an investor thesis, and a valuation. I pitched it to more than 200 experts and executives."
-      points: []
-    - name: "Boston Consulting Group"
-      title: "Summer Associate"
-      dates: "2013"
-      paragraphs: []
-      points: []
-    - name: "Pennsylvania SBDC"
-      title: "Life Sciences Consultant"
-      dates: "2011 to 2013"
-      paragraphs:
-        - "I advised scientists at Penn Medicine and the Wistar Institute on market opportunities. An investor presentation I prepared for a therapeutic human papillomavirus vaccine led to a license with a Chinese biotech."
-      points: []
-    - name: "Vertex Pharmaceuticals"
-      title: "Research Intern, Infectious Diseases"
-      dates: "2012"
-      paragraphs:
-        - "I designed the testing methodology for an anti-flu compound and analyzed 120 data sets."
-      points: []
-    - name: "The Wharton School"
-      title: "M&A Researcher"
-      dates: "2011"
-      paragraphs:
-        - "I researched strategies for pharma-biotech mergers and acquisitions on a Wharton SPUR grant."
-      points: []
-
-education:
-  eyebrow: "Education"
-  heading_before: "Harvard and"
-  heading_em: "Penn"
-  schools:
-    - name: "Harvard Business School"
-      title: "MBA"
-      dates: "2016 to 2018"
-      paragraphs:
-        - "I was Healthcare Investing Director of the Healthcare Club. I was a finalist, 5 of 200, in the Harvard President's Innovation Challenge."
-    - name: "University of Pennsylvania"
-      title: "Roy and Diana Vagelos Dual Degree Program in Life Sciences and Management, LSM"
-      dates: "2010 to 2014"
-      paragraphs:
-        - "I earned a B.A. in Biology from the College and a B.S. in Economics with a concentration in Finance from Wharton. I was on the Dean's List. I was Co-Chair of the Wharton Undergraduate Research Board."
-
-publication:
-  eyebrow: "Publication"
-  title: "A Portfolio Approach to Accelerate Therapeutic Innovation in Ovarian Cancer"
-  detail: "With Dr. Andrew Lo, MIT. Journal of Investment Management, 2019."
-
-skills:
-  eyebrow: "Skills"
-  text: "AI, biotechnology, business development, strategic negotiations, competitive analysis, financial modeling, market research, valuation, management consulting, and business Chinese."
+        - "I bring academic and hospital science that I have already sorted."
+        - "I run due diligence and commercial plans in biopharma."
+        - "I work in English and in Mandarin."
 
 contact:
   eyebrow: "Contact"

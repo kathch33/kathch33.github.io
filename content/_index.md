@@ -1,6 +1,6 @@
 ---
 title: Katherine Cheng
-description: Katherine Cheng bridges science and business in life sciences, after business development at Moderna and healthcare work at BCG.
+description: Katherine Cheng advises scientists, universities, and the people who buy science. She has done business development at Moderna and healthcare strategy at Boston Consulting Group.
 aliases:
   - /about/
   - /contact/
