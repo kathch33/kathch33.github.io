@@ -285,7 +285,6 @@ h2 em {
   flex: none;
 }
 
-.dek,
 .intro,
 .hero-meta,
 .credential,
@@ -301,14 +300,8 @@ h2 em {
   line-height: 1.7;
 }
 
-.dek {
-  margin: 28px 0 0;
-  max-width: 34em;
-  font-size: 20px;
-}
-
 .hero-meta {
-  margin: 18px 0 0;
+  margin: 28px 0 0;
   max-width: 36em;
   font-size: 18px;
 }
