@@ -57,7 +57,7 @@
   <h2 id="help-title">{{ $p.help.heading_before }} <em>{{ $p.help.heading_em }}</em></h2>
   <div class="help-grid">
     {{- range $p.help.audiences }}
-    <article class="help-card" aria-labelledby="help-{{ .number }}">
+    <article class="help-card{{ if .wide }} help-card-wide{{ end }}" aria-labelledby="help-{{ .number }}">
       <p class="help-no">{{ .number }}</p>
       <h3 id="help-{{ .number }}">{{ .title }}</h3>
       {{- with .note }}

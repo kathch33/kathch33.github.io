@@ -492,6 +492,17 @@ h2 em {
   border-bottom: 1px solid var(--line);
 }
 
+.help-card-wide {
+  grid-column: 1 / -1;
+}
+
+.help-card-wide h3,
+.help-card-wide .help-note,
+.help-card-wide .help-line,
+.help-card-wide ul {
+  max-width: 40em;
+}
+
 .help-no {
   margin: 0;
   color: var(--green);

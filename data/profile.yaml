@@ -97,6 +97,15 @@ help:
         - "I bring you science from universities and hospitals before it is a pitch."
         - "I tell you what is worth your time."
         - "I help you test the science and the business case, in English or in Mandarin."
+    - number: "04"
+      title: "Life sciences teams"
+      note: "Research, tech transfer, business development, and investors"
+      wide: true
+      pain: "Your team is buried in manual work. The same searches, summaries, and updates take the day."
+      points:
+        - "I help you set up AI agents for the repetitive work."
+        - "Your people keep the judgment and the relationships."
+        - "The agents do the repetitive tasks you already do."
 
 contact:
   eyebrow: "Contact"
