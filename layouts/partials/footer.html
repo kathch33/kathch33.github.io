@@ -1,6 +1,9 @@
 <footer class="site-footer">
   <div class="shell footer-bar">
     <p>{{ site.Title }}</p>
-    <a href="{{ "writing/" | relURL }}"{{ if eq .Section "writing" }} aria-current="page"{{ end }}>Writing</a>
+    <nav class="footer-nav" aria-label="Footer">
+      {{ partial "linkedin.html" hugo.Data.profile.linkedin }}
+      <a href="{{ "writing/" | relURL }}"{{ if eq .Section "writing" }} aria-current="page"{{ end }}>Writing</a>
+    </nav>
   </div>
 </footer>

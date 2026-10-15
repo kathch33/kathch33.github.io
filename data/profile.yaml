@@ -12,7 +12,10 @@ hero:
   languages: "English and Mandarin"
   primary_label: "Send me a note"
   secondary_label: "Follow on LinkedIn"
-  secondary_url: "https://www.linkedin.com/in/kathxcheng/"
+
+linkedin:
+  label: "LinkedIn"
+  url: "https://www.linkedin.com/in/kathxcheng/"
 
 about:
   eyebrow: "About"

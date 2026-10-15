@@ -99,9 +99,45 @@ li {
 .header-bar {
   min-height: 80px;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-  gap: 16px;
+  gap: 8px 16px;
+}
+
+.header-nav,
+.footer-nav {
+  display: flex;
+  align-items: center;
+  gap: 8px 22px;
+}
+
+.header-nav {
+  margin-left: auto;
+}
+
+.linkedin {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 48px;
+  color: var(--ink);
+  font-family: var(--sans);
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1;
+  text-decoration: none;
+}
+
+.linkedin:hover {
+  color: var(--teal);
+}
+
+.linkedin-icon {
+  display: block;
+  width: 16px;
+  height: 16px;
+  flex: none;
 }
 
 .wordmark {
@@ -666,6 +702,15 @@ h2 em {
   color: var(--muted-on-dark);
 }
 
+.contact-band .linkedin {
+  margin-top: 28px;
+  color: var(--paper);
+}
+
+.contact-band .linkedin:hover {
+  color: var(--sage);
+}
+
 .form-reassurance {
   margin: 0;
   max-width: 36em;
@@ -875,9 +920,10 @@ section[id] {
 .footer-bar {
   min-height: 80px;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-  gap: 16px;
+  gap: 8px 16px;
 }
 
 .site-footer p {
@@ -898,6 +944,16 @@ section[id] {
 .site-footer a:hover {
   text-decoration: underline;
   text-underline-offset: 0.2em;
+}
+
+.site-footer a.linkedin,
+.site-footer a.linkedin:hover {
+  color: var(--ink);
+  text-decoration: none;
+}
+
+.site-footer a.linkedin:hover {
+  color: var(--teal);
 }
 
 .site-footer a[aria-current="page"] {

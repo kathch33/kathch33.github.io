@@ -10,7 +10,7 @@
     <p class="hero-meta">{{ $p.hero.founder }}. {{ $p.hero.location }}. {{ $p.hero.languages }}.</p>
     <div class="actions">
       <a class="btn btn-solid" href="#contact">{{ $p.hero.primary_label }}</a>
-      <a class="btn btn-line" href="{{ $p.hero.secondary_url }}" target="_blank" rel="noopener noreferrer" aria-label="{{ $p.hero.secondary_label }}, opens in a new tab">{{ $p.hero.secondary_label }}</a>
+      <a class="btn btn-line" href="{{ $p.linkedin.url }}" target="_blank" rel="noopener noreferrer" aria-label="{{ $p.hero.secondary_label }}, opens in a new tab">{{ $p.hero.secondary_label }}</a>
     </div>
   </div>
 </section>
@@ -49,7 +49,7 @@
   <p class="intro">{{ $p.insights.philosophy }}</p>
   <p class="intro insights-offer">{{ $p.insights.offer }}</p>
   <div class="actions">
-    <a class="btn btn-solid" href="{{ $p.hero.secondary_url }}" target="_blank" rel="noopener noreferrer" aria-label="{{ $p.hero.secondary_label }}, opens in a new tab">{{ $p.hero.secondary_label }}</a>
+    <a class="btn btn-solid" href="{{ $p.linkedin.url }}" target="_blank" rel="noopener noreferrer" aria-label="{{ $p.hero.secondary_label }}, opens in a new tab">{{ $p.hero.secondary_label }}</a>
     <a class="btn btn-line" href="#contact">{{ $p.hero.primary_label }}</a>
   </div>
 </section>
@@ -133,6 +133,7 @@
     <p class="eyebrow"><span class="eyebrow-rule" aria-hidden="true"></span><span>{{ $p.contact.eyebrow }}</span></p>
     <h2 id="contact-title">{{ $p.contact.heading_before }} <em>{{ $p.contact.heading_em }}</em>{{ $p.contact.heading_after }}</h2>
     <p class="intro">{{ $p.contact.intro }}</p>
+    {{ partial "linkedin.html" $p.linkedin }}
     <form
       id="contact-form"
       class="form"
