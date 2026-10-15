@@ -350,19 +350,19 @@ h2 em {
   color: var(--ink);
 }
 
-.speak {
+.intro-call {
   border-top: 1px solid var(--line);
   padding: 88px 0 120px;
 }
 
-.speak h2 {
+.intro-call h2 {
   margin: 0;
-  max-width: 10em;
+  max-width: 12em;
   font-size: clamp(40px, 5vw, 64px);
   line-height: 0.95;
 }
 
-.speak-text {
+.intro-call-text {
   margin: 24px 0 0;
   max-width: 36em;
   color: var(--body);
@@ -1028,11 +1028,11 @@ section[id] {
 
   .section-end,
   .contact-band,
-  .speak {
+  .intro-call {
     padding-bottom: 80px;
   }
 
-  .speak {
+  .intro-call {
     padding-top: 64px;
   }
 

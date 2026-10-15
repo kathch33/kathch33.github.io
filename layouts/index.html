@@ -117,13 +117,17 @@
   {{ partial "note-cta.html" $p.hero.primary_label }}
 </section>
 
-<section class="speak" aria-labelledby="speak-title">
+<section class="intro-call" aria-labelledby="intro-title">
   <div class="shell">
-    <p class="eyebrow"><span class="eyebrow-rule" aria-hidden="true"></span><span>{{ $p.speak.eyebrow }}</span></p>
-    <h2 id="speak-title">{{ $p.speak.heading_before }} <em>{{ $p.speak.heading_em }}</em></h2>
-    <p class="speak-text">{{ $p.speak.text }}</p>
+    <p class="eyebrow"><span class="eyebrow-rule" aria-hidden="true"></span><span>{{ $p.intro.eyebrow }}</span></p>
+    <h2 id="intro-title">{{ $p.intro.heading_before }} <em>{{ $p.intro.heading_em }}</em></h2>
+    <p class="intro-call-text">{{ $p.intro.text }}</p>
     <div class="actions">
-      <a class="btn btn-solid" href="#contact">{{ $p.hero.primary_label }}</a>
+      {{- if site.Params.introCallURL }}
+      <a class="btn btn-solid" href="{{ site.Params.introCallURL }}" target="_blank" rel="noopener noreferrer">{{ $p.intro.cta }}</a>
+      {{- else }}
+      <a class="btn btn-solid" href="#contact">{{ $p.intro.cta }}</a>
+      {{- end }}
     </div>
   </div>
 </section>

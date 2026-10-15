@@ -31,6 +31,7 @@ Before commit, hand the draft to a separate unslop sub-agent that uses `.agents/
 | Speaking and leadership | `data/speaking.yaml` |
 | Writing and research | `data/press.yaml` |
 | Contact endpoint | `params.contactFormEndpoint` in `hugo.yaml` |
+| Intro call booking URL | `params.introCallURL` in `hugo.yaml`. Empty until Katherine supplies a link. |
 
 ## Rules
 

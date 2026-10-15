@@ -50,11 +50,12 @@ insights:
   philosophy: "The posts are free, and they are the same thinking I use with the people who hire me."
   offer: 'Comment "snapshot" on a post, or send me a note, to request a snapshot of your science, your portfolio, or your search area.'
 
-speak:
-  eyebrow: "Speaking"
-  heading_before: "Book Katherine"
-  heading_em: "to speak"
-  text: "I spoke at the Harvard Asia Business Conference, and I led a workshop at Penn HealthX."
+intro:
+  eyebrow: "Intro call"
+  heading_before: "Book time with Katherine"
+  heading_em: "for an intro call"
+  text: "Tell me what you are working on, and we can set a time to talk."
+  cta: "Book an intro call"
 
 proof:
   places:

@@ -19,6 +19,9 @@ params:
   # FormSubmit AJAX URL. Placeholder until the alias from activation replaces it.
   # Do not put an email address here. See AGENTS.md.
   contactFormEndpoint: https://formsubmit.co/ajax/REPLACE_WITH_FORMSUBMIT_ALIAS
+  # Intro call booking page. Leave empty until a Calendly or Google appointment link is ready.
+  # When set, the intro call button opens this URL. When empty, the button scrolls to the contact form.
+  introCallURL: ""
 
 permalinks:
   writing: /writing/:slug/
