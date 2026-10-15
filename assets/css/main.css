@@ -285,6 +285,26 @@ h2 em {
   margin-top: 40px;
 }
 
+.about h2.about-lead {
+  margin: 0;
+  max-width: 16em;
+  font-family: var(--serif);
+  font-weight: 400;
+  font-size: clamp(32px, 4vw, 48px);
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+  color: var(--ink);
+}
+
+.about-body p {
+  margin: 22px 0 0;
+  max-width: 40em;
+  font-size: 18px;
+  font-weight: 300;
+  color: var(--body);
+  line-height: 1.7;
+}
+
 .contact-band,
 .section {
   padding-top: 120px;
