@@ -10,7 +10,7 @@
     <p class="hero-meta">{{ $p.hero.founder }}. {{ $p.hero.location }}. {{ $p.hero.languages }}.</p>
     <div class="actions">
       <a class="btn btn-solid" href="#contact">{{ $p.hero.primary_label }}</a>
-      <a class="btn btn-line" href="#work">{{ $p.hero.secondary_label }}</a>
+      <a class="btn btn-line" href="{{ $p.linkedin.url }}" target="_blank" rel="noopener noreferrer" aria-label="{{ $p.hero.secondary_label }}, opens in a new tab">{{ $p.hero.secondary_label }}</a>
     </div>
   </div>
 </section>
@@ -24,6 +24,51 @@
     <p>{{ $p.about.today }}</p>
     <p>{{ $p.about.passion }}</p>
     <p>{{ $p.about.addition }}</p>
+  </div>
+</section>
+
+<section class="section shell" id="approach" aria-labelledby="approach-title">
+  <p class="eyebrow"><span class="eyebrow-rule" aria-hidden="true"></span><span>{{ $p.framework.eyebrow }}</span></p>
+  <h2 id="approach-title">{{ $p.framework.heading_before }} <em>{{ $p.framework.heading_em }}</em></h2>
+  <p class="intro">{{ $p.framework.intro }}</p>
+  <div class="help-grid">
+    {{- range $p.framework.steps }}
+    <article class="help-card" aria-labelledby="approach-{{ .number }}">
+      <p class="help-no">{{ .number }}</p>
+      <h3 id="approach-{{ .number }}">{{ .title }}</h3>
+      <p class="framework-text">{{ .text }}</p>
+    </article>
+    {{- end }}
+  </div>
+</section>
+
+<section class="section shell" id="insights" aria-labelledby="insights-title">
+  <div class="insights-layout">
+    <div class="insights-copy">
+      <p class="eyebrow"><span class="eyebrow-rule" aria-hidden="true"></span><span>{{ $p.insights.eyebrow }}</span></p>
+      <h2 id="insights-title">{{ $p.insights.heading_before }} <em>{{ $p.insights.heading_em }}</em></h2>
+      <p class="intro">{{ $p.insights.schedule }}</p>
+      <p class="intro">{{ $p.insights.philosophy }}</p>
+      <p class="intro insights-offer">{{ $p.insights.offer }}</p>
+      <div class="actions">
+        <a class="btn btn-solid" href="{{ $p.linkedin.url }}" target="_blank" rel="noopener noreferrer" aria-label="{{ $p.hero.secondary_label }}, opens in a new tab">{{ $p.hero.secondary_label }}</a>
+        <a class="btn btn-line" href="#contact">{{ $p.hero.primary_label }}</a>
+      </div>
+    </div>
+    <div class="insights-feed">
+      <div class="post-feed" tabindex="0" aria-label="LinkedIn posts">
+        {{- range hugo.Data.linkedin_posts.posts }}
+        <article class="post-card">
+          <p class="post-date">{{ .date }}</p>
+          <h3 class="post-hook">{{ .hook }}</h3>
+          {{- with .detail }}
+          <p class="post-detail">{{ . }}</p>
+          {{- end }}
+          <a class="post-link" href="{{ .url }}" target="_blank" rel="noopener noreferrer" aria-label="Read on LinkedIn, opens in a new tab">Read on LinkedIn</a>
+        </article>
+        {{- end }}
+      </div>
+    </div>
   </div>
 </section>
 
@@ -43,6 +88,7 @@
       {{ partial "proof-list.html" hugo.Data.speaking }}
       {{ partial "proof-list.html" hugo.Data.press }}
     </div>
+    {{ partial "note-cta.html" $p.hero.primary_label }}
   </div>
 </section>
 
@@ -62,9 +108,10 @@
     </article>
     {{- end }}
   </div>
+  {{ partial "note-cta.html" $p.hero.primary_label }}
 </section>
 
-<section class="section section-end shell" id="help" aria-labelledby="help-title">
+<section class="section shell" id="help" aria-labelledby="help-title">
   <p class="eyebrow"><span class="eyebrow-rule" aria-hidden="true"></span><span>{{ $p.help.eyebrow }}</span></p>
   <h2 id="help-title">{{ $p.help.heading_before }} <em>{{ $p.help.heading_em }}</em></h2>
   <div class="help-grid">
@@ -85,6 +132,22 @@
     </article>
     {{- end }}
   </div>
+  {{ partial "note-cta.html" $p.hero.primary_label }}
+</section>
+
+<section class="intro-call" aria-labelledby="intro-title">
+  <div class="shell">
+    <p class="eyebrow"><span class="eyebrow-rule" aria-hidden="true"></span><span>{{ $p.intro.eyebrow }}</span></p>
+    <h2 id="intro-title">{{ $p.intro.heading_before }} <em>{{ $p.intro.heading_em }}</em></h2>
+    <p class="intro-call-text">{{ $p.intro.text }}</p>
+    <div class="actions">
+      {{- if site.Params.introCallURL }}
+      <a class="btn btn-solid" href="{{ site.Params.introCallURL }}" target="_blank" rel="noopener noreferrer">{{ $p.intro.cta }}</a>
+      {{- else }}
+      <a class="btn btn-solid" href="#contact">{{ $p.intro.cta }}</a>
+      {{- end }}
+    </div>
+  </div>
 </section>
 
 <section class="contact-band" id="contact" aria-labelledby="contact-title">
@@ -92,6 +155,10 @@
     <p class="eyebrow"><span class="eyebrow-rule" aria-hidden="true"></span><span>{{ $p.contact.eyebrow }}</span></p>
     <h2 id="contact-title">{{ $p.contact.heading_before }} <em>{{ $p.contact.heading_em }}</em>{{ $p.contact.heading_after }}</h2>
     <p class="intro">{{ $p.contact.intro }}</p>
+    <div class="contact-links">
+      {{ partial "linkedin.html" $p.linkedin }}
+      {{ partial "mail.html" . }}
+    </div>
     <form
       id="contact-form"
       class="form"
@@ -118,6 +185,7 @@
         <input id="contact-honey" name="_honey" type="text" tabindex="-1" autocomplete="off">
       </div>
       <button class="btn btn-solid" type="submit">{{ $p.contact.send_label }}</button>
+      <p class="form-reassurance">{{ $p.contact.reassurance }}</p>
       <noscript><p class="noscript">{{ $p.contact.noscript }}</p></noscript>
     </form>
     <p id="contact-status" class="form-status" role="status" hidden></p>

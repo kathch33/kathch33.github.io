@@ -1,5 +1,15 @@
 (function () {
   var form = document.getElementById("contact-form");
+  var noteField = document.getElementById("contact-name");
+
+  function focusNoteField() {
+    if (!noteField || location.hash !== "#contact-name") return;
+    noteField.focus();
+  }
+
+  window.addEventListener("hashchange", focusNoteField);
+  focusNoteField();
+
   if (!form) return;
 
   var status = document.getElementById("contact-status");

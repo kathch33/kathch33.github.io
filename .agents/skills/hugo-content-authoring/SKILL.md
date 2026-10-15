@@ -29,8 +29,10 @@ Before commit, hand the draft to a separate unslop sub-agent that uses `.agents/
 | Essays | `content/writing/<slug>.md` |
 | Contact form labels | `contact` in `data/profile.yaml` |
 | Speaking and leadership | `data/speaking.yaml` |
+| LinkedIn post previews | `data/linkedin_posts.yaml` |
 | Writing and research | `data/press.yaml` |
 | Contact endpoint | `params.contactFormEndpoint` in `hugo.yaml` |
+| Intro call booking URL | `params.introCallURL` in `hugo.yaml`. Empty until Katherine supplies a link. |
 
 ## Rules
 

@@ -1,6 +1,6 @@
 ---
 title: Katherine Cheng
-description: Good science gets stuck between the people who need each other.
+description: Find the people who need your science.
 aliases:
   - /about/
   - /contact/

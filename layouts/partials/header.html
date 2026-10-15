@@ -1,6 +1,10 @@
 <header class="site-header">
   <div class="shell header-bar">
     <a class="wordmark" href="{{ "/" | relURL }}">{{ site.Title }}</a>
-    <a class="btn btn-solid" href="{{ "/" | relURL }}#contact">Contact</a>
+    <nav class="header-nav" aria-label="Site">
+      {{ partial "linkedin.html" hugo.Data.profile.linkedin }}
+      {{ partial "mail.html" . }}
+      <a class="btn btn-solid" href="{{ "/" | relURL }}#contact">Contact</a>
+    </nav>
   </div>
 </header>
