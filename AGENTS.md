@@ -44,7 +44,7 @@ How she can help, in `data/profile.yaml`: scientists; hospitals and universities
 
 Hugo project with custom layouts in `layouts/`. No theme. No theme submodule.
 
-- `/` Home. A short advisor page: positioning, portrait, one proof band, selected work, how she can help, and the contact form. Not a resume. No experience timeline, internships, skills list, or bullet-level history. Copy lives in `data/profile.yaml`. The research strip is `data/press.yaml`. The meta description is front matter in `content/_index.md`. Logo files and their sources are `static/logos/` and `data/logo-sources.yaml`.
+- `/` Home. A short advisor page: positioning, portrait, one proof band, selected work, how she can help, and the contact form. Not a resume. No experience timeline, internships, skills list, or bullet-level history. Copy lives in `data/profile.yaml`. Speaking is `data/speaking.yaml`. Research is `data/press.yaml`. The meta description is front matter in `content/_index.md`. Logo files and their sources are `static/logos/` and `data/logo-sources.yaml`.
 - `/about/` and `/contact/` alias to `/`.
 - `/writing/` Essays. Posts are `content/writing/*.md`. One example post is `draft: true` and must stay a draft until Katherine replaces it and asks for it to be published. Production builds omit drafts, so the public writing page says nothing is published yet.
 
@@ -139,6 +139,6 @@ The form sends `_subject` `New question from kathch33.github.io`, `_template` `t
 - 2026-10-14: Site copy is unslopped by a separate sub-agent using `.agents/skills/unslop/SKILL.md` before commit. The authoring agent does not unslop its own draft.
 - 2026-10-14: The public page is an editorial profile in the Kgence visual system, not the earlier paper-and-clay layout and not a LinkedIn clone.
 - 2026-10-15: Katherine reviewed the full biography page and asked for a general advisor page. Selected work is a few anonymized cases from real facts. No resume timeline, internships, skills list, or published metrics she did not ask to show. No gradients. Logo row is monochrome ink. Do not invent testimonials.
-- 2026-10-15: Social proof is one quiet band. Cities are Boston, New York, Chicago, and Philadelphia. The only research link is the 2019 Journal of Investment Management paper, via the SSRN page, in `data/press.yaml`. The co-chair line is the 2021 Harvard Business School Healthcare Alumni Conference. Wharton healthcare alumni stays participation, not a title.
+- 2026-10-15: Social proof is one quiet band. Cities are Boston, New York, Chicago, and Philadelphia. Speaking items live in `data/speaking.yaml`. Research lives in `data/press.yaml`. The 2021 conference line may say more than 500 alumni leaders. Do not add a Wharton healthcare alumni title or a vague network line. Do not invent other talks or papers.
 - 2026-10-14: The contact form is on the home page. No email address in the built site. The FormSubmit alias still has to be pasted into `hugo.yaml` after she activates it.
 - 2026-10-14: The portrait is cropped from her LinkedIn header screenshot. The banner is the green-to-teal circuit image. Both live in `static/images/`.

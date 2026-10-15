@@ -26,24 +26,10 @@
       <li><img src="{{ .src | relURL }}" alt="{{ .alt }}" width="{{ .width }}" height="{{ .height }}"></li>
       {{- end }}
     </ul>
-    <p class="proof-note">{{ $p.proof.leadership }}</p>
-    {{- with hugo.Data.press }}
-    <div class="press">
-      <p class="eyebrow"><span class="eyebrow-rule" aria-hidden="true"></span><span>{{ .eyebrow }}</span></p>
-      <ul class="press-list">
-        {{- range .items }}
-        <li>
-          {{- if .url }}
-          <a href="{{ .url }}">{{ .title }}</a>
-          {{- else }}
-          <p class="press-title">{{ .title }}</p>
-          {{- end }}
-          <p class="press-meta">{{ .source }} {{ .note }}</p>
-        </li>
-        {{- end }}
-      </ul>
+    <div class="proof-columns">
+      {{ partial "proof-list.html" hugo.Data.speaking }}
+      {{ partial "proof-list.html" hugo.Data.press }}
     </div>
-    {{- end }}
   </div>
 </section>
 

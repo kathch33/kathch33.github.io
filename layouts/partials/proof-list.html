@@ -1,0 +1,18 @@
+<div class="proof-list">
+  <p class="eyebrow"><span class="eyebrow-rule" aria-hidden="true"></span><span>{{ .eyebrow }}</span></p>
+  <ul class="proof-items">
+    {{- range .items }}
+    <li>
+      <p class="proof-item-title">{{ .title }}</p>
+      <p class="proof-item-detail">{{ .detail }}</p>
+      {{- with .links }}
+      <ul class="proof-links">
+        {{- range . }}
+        <li><a href="{{ .url }}">{{ .label }}</a></li>
+        {{- end }}
+      </ul>
+      {{- end }}
+    </li>
+    {{- end }}
+  </ul>
+</div>
