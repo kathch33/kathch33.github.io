@@ -14,7 +14,7 @@ minify:
       keepComments: true
 
 params:
-  description: Katherine Cheng advises scientists, universities, and the people who buy science. She has done business development at Moderna and healthcare strategy at Boston Consulting Group.
+  description: A lab result needs a partner. Katherine Cheng works with scientists, hospitals and universities, and pharma, biotech, and investors.
   author: Katherine Cheng
   # FormSubmit AJAX URL. Placeholder until the alias from activation replaces it.
   # Do not put an email address here. See AGENTS.md.

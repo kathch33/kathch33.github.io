@@ -509,6 +509,21 @@ h2 em {
   color: var(--ink);
 }
 
+.help-label {
+  margin: 28px 0 0;
+  color: var(--green);
+  font-family: var(--mono);
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 0.16em;
+  line-height: 1.4;
+  text-transform: uppercase;
+}
+
+.help-label + ul {
+  margin-top: 16px;
+}
+
 .help-card ul {
   list-style: none;
   margin: 28px 0 0;

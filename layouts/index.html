@@ -6,6 +6,7 @@
   <div class="hero-text">
     <h1 id="hero-title">{{ $p.hero.heading_before }} <em>{{ $p.hero.heading_em }}</em></h1>
     <p class="dek">{{ $p.hero.dek }}</p>
+    <p class="hero-meta">{{ $p.hero.line }}</p>
     <p class="hero-meta">{{ $p.hero.founder }}. {{ $p.hero.location }}. {{ $p.hero.languages }}.</p>
     <div class="actions">
       <a class="btn btn-solid" href="#contact">{{ $p.hero.primary_label }}</a>
@@ -42,8 +43,9 @@
       <p class="work-no">{{ .number }}</p>
       <div>
         <h3 id="work-{{ .number }}">{{ .title }}</h3>
-        <p class="work-seat">{{ .seat }}</p>
-        <p class="work-text">{{ .text }}</p>
+        <p class="work-seat">{{ .problem }}</p>
+        <p class="work-text">{{ .done }}</p>
+        <p class="work-text">{{ .mattered }}</p>
       </div>
     </article>
     {{- end }}
@@ -58,7 +60,8 @@
     <article class="help-card" aria-labelledby="help-{{ .number }}">
       <p class="help-no">{{ .number }}</p>
       <h3 id="help-{{ .number }}">{{ .title }}</h3>
-      <p class="help-line">{{ .line }}</p>
+      <p class="help-line">{{ .pain }}</p>
+      <p class="help-label">{{ $p.help.label }}</p>
       <ul>
         {{- range .points }}
         <li>{{ . }}</li>
