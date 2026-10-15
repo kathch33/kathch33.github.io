@@ -30,7 +30,7 @@ Match the Kgence.ai reference: luxury, quiet, typographic. Fast. Accessible. Com
 - Background `#f7f5f3`, ink `#121212`, body `#6b6b6b`, hairline `#dcd8d2`. Flat color only. No gradients, including the old circuit banner.
 - Green `#4a6b45` for italic display words and mono eyebrows. Teal `#1f6f8b` for links and hover only. On the black contact band, small green text uses `#9dba94` so it stays AA.
 - Display type is Cormorant Garamond. Body is Outfit at weight 300. Eyebrows and buttons are IBM Plex Mono.
-- Square corners. No shadows. No card grid with gaps. Numbered help blocks share hairlines.
+- Square corners. No shadows. No card grid with gaps. Numbered help blocks share hairlines. Exception: the LinkedIn post cards in the insights column are white, rounded, and lightly shadowed. Katherine asked for that look. Do not round or shadow the rest of the page.
 - Logos in `static/logos/` render at one height, in ink. Do not recolor them back to brand color.
 - Prose measure about 68ch. Help blocks become one column under 900px.
 - The only JavaScript is the contact form. No carousel. `scroll-behavior` is disabled under `prefers-reduced-motion`.

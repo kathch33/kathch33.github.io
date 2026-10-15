@@ -4,9 +4,8 @@
   <p class="eyebrow"><span class="eyebrow-rule" aria-hidden="true"></span><span>{{ $p.hero.eyebrow }}</span></p>
   <img class="portrait" src="{{ "images/katherine-cheng.png" | relURL }}" alt="Katherine Cheng" width="155" height="153">
   <div class="hero-text">
-    <h1 id="hero-title">{{ $p.hero.heading_before }} <em>{{ $p.hero.heading_em }}</em> {{ $p.hero.heading_after }}</h1>
+    <h1 id="hero-title">{{ $p.hero.heading_before }} <em>{{ $p.hero.heading_em }}</em></h1>
     <p class="dek">{{ $p.hero.dek }}</p>
-    <p class="hero-quiet">{{ $p.hero.quiet }}</p>
     <p class="hero-meta">{{ $p.hero.founder }}. {{ $p.hero.location }}. {{ $p.hero.languages }}.</p>
     <div class="actions">
       <a class="btn btn-solid" href="#contact">{{ $p.hero.primary_label }}</a>
@@ -27,26 +26,11 @@
   </div>
 </section>
 
-<section class="section shell" id="approach" aria-labelledby="approach-title">
-  <p class="eyebrow"><span class="eyebrow-rule" aria-hidden="true"></span><span>{{ $p.framework.eyebrow }}</span></p>
-  <h2 id="approach-title">{{ $p.framework.heading_before }} <em>{{ $p.framework.heading_em }}</em></h2>
-  <p class="intro">{{ $p.framework.intro }}</p>
-  <div class="help-grid">
-    {{- range $p.framework.steps }}
-    <article class="help-card" aria-labelledby="approach-{{ .number }}">
-      <p class="help-no">{{ .number }}</p>
-      <h3 id="approach-{{ .number }}">{{ .title }}</h3>
-      <p class="framework-text">{{ .text }}</p>
-    </article>
-    {{- end }}
-  </div>
-</section>
-
 <section class="section shell" id="insights" aria-labelledby="insights-title">
   <div class="insights-layout">
     <div class="insights-copy">
       <p class="eyebrow"><span class="eyebrow-rule" aria-hidden="true"></span><span>{{ $p.insights.eyebrow }}</span></p>
-      <h2 id="insights-title">{{ $p.insights.heading_before }} <em>{{ $p.insights.heading_em }}</em></h2>
+      <h2 id="insights-title">{{ $p.insights.heading_before }}</h2>
       <p class="intro">{{ $p.insights.schedule }}</p>
       <p class="intro">{{ $p.insights.philosophy }}</p>
       <p class="intro insights-offer">{{ $p.insights.offer }}</p>
@@ -58,14 +42,7 @@
     <div class="insights-feed">
       <div class="post-feed" tabindex="0" aria-label="LinkedIn posts">
         {{- range hugo.Data.linkedin_posts.posts }}
-        <article class="post-card">
-          <p class="post-date">{{ .date }}</p>
-          <h3 class="post-hook">{{ .hook }}</h3>
-          {{- with .detail }}
-          <p class="post-detail">{{ . }}</p>
-          {{- end }}
-          <a class="post-link" href="{{ .url }}" target="_blank" rel="noopener noreferrer" aria-label="Read on LinkedIn, opens in a new tab">Read on LinkedIn</a>
-        </article>
+        {{ partial "linkedin-card.html" . }}
         {{- end }}
       </div>
     </div>
@@ -124,11 +101,7 @@
       {{- end }}
       <p class="help-line">{{ .pain }}</p>
       <p class="help-label">{{ $p.help.label }}</p>
-      <ul>
-        {{- range .points }}
-        <li>{{ . }}</li>
-        {{- end }}
-      </ul>
+      <p class="help-sentence">{{ .help }}</p>
     </article>
     {{- end }}
   </div>
