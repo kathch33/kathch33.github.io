@@ -1,12 +1,10 @@
-description: "Find the people who need your science."
+description: "I bridge science and business and translate innovations into market impact."
 
 hero:
   eyebrow: "Life sciences"
-  heading_before: "Find the people who"
-  heading_em: "need"
-  heading_after: "your science."
-  dek: "I've sat in every chair where science becomes a deal. I'll tell you what the other side is thinking."
-  quiet: "Kgence.ai helps good science find the people who need it. The analysis is automated, and the relationships stay human."
+  heading_before: "Bridging Science and Business, Translating Innovations into"
+  heading_em: "Market Impact"
+  dek: "I'll tell you what the other side is thinking."
   founder: "Founder, Kgence.ai"
   location: "Greater Boston"
   languages: "English and Mandarin"
@@ -21,34 +19,17 @@ about:
   eyebrow: "About"
   opening: "I'm a life sciences business development and strategy leader who helps scientists, universities, and buyers of science find each other."
   scope: "For more than 12 years I have helped a result become a deal. I have done that work in the lab, at a consulting firm, in pharma business development, at a small business center, and in an internship at a drug company."
-  signature: "At Boston Consulting Group I was Project Leader in the Healthcare Practice. I led commercial plans and the review of acquisitions in healthcare and in biopharma. At Moderna I worked in business development on individualized neoantigen therapy in oncology. Earlier, I wrote the business plan for an AAV gene therapy program in the Dr. Jim Wilson Lab at Penn Medicine. The Defense Advanced Research Projects Agency funded the program. The program is now REGENXBIO. At the Pennsylvania Small Business Development Center I prepared the investor presentation for a therapeutic human papillomavirus vaccine. The presentation led to a license with a biotech. I interned at Vertex Pharmaceuticals."
+  signature: "At Boston Consulting Group I was Project Leader in the Healthcare Practice. I led commercial plans and the review of acquisitions in healthcare and in biopharma. At Moderna I worked in business development on individualized neoantigen therapy in oncology. At the Pennsylvania Small Business Development Center I prepared the investor presentation for a therapeutic human papillomavirus vaccine. The presentation led to a license with a biotech. I interned at Vertex Pharmaceuticals."
   today: "Today I am building Kgence.ai. I help life sciences teams put AI agents on repetitive work. People keep the judgment and the relationships."
   passion: "My passion is bridging the science with a partnership, a license, or a company."
   addition: "In addition, I wrote a paper with MIT Professor Andrew W. Lo and others on a portfolio approach to drug development in ovarian cancer. The Journal of Investment Management published it. I was co-chair of the Harvard Business School Healthcare Alumni Conference. I spoke at various conferences such as the Harvard Asia Business Conference and Penn HealthX. I earned an M.B.A. at Harvard Business School and was trained in the Vagelos Life Sciences and Management program at the University of Pennsylvania. I work in English and in Mandarin. I work with people in Boston, New York, Philadelphia, Shanghai, and Beijing."
 
-framework:
-  eyebrow: "How I work"
-  heading_before: "Every chair"
-  heading_em: "at the table"
-  intro: "I have sat in the scientist chair, the tech transfer chair, and the pharma and investor chair."
-  steps:
-    - number: "01"
-      title: "The chair you are in"
-      text: "You are the scientist, the tech transfer office, or the buyer."
-    - number: "02"
-      title: "The other side"
-      text: "I tell you what that chair is thinking. I have sat in it."
-    - number: "03"
-      title: "The ask"
-      text: "I help you get ready for a license, a meeting, or a look at the science."
-
 insights:
   eyebrow: "LinkedIn"
   heading_before: "Insights"
-  heading_em: "twice a week"
-  schedule: "I post on LinkedIn on Tuesdays and Thursdays, from 8 to 9 AM Eastern Time, about where hospital and university science is undervalued."
-  philosophy: "The posts are free, and they are the same thinking I use with the people who hire me."
-  offer: 'Comment "snapshot" on a post, or send me a note, to request a snapshot of your science, your portfolio, or your search area.'
+  schedule: "I post regularly about bridging life sciences and business."
+  philosophy: "The posts are free. I use the same thinking in the posts that I use with the people who hire me."
+  offer: 'To request a snapshot of your science, your portfolio, or your search area, comment "snapshot" on a post or send me a note.'
 
 intro:
   eyebrow: "Intro call"
@@ -117,35 +98,23 @@ help:
     - number: "01"
       title: "Scientists"
       pain: "You have a promising result and a grant deadline, and you do not know who would license it."
-      points:
-        - "I help you explain the market story and the funder story."
-        - "I tell you who would license it, and why."
-        - "I help you walk into that conversation ready."
+      help: "You walk into the grant and the licensing conversation knowing who wants it and why."
     - number: "02"
       title: "Tech transfer offices"
       note: "Universities and hospitals"
       pain: "You have a pile of disclosures on your desk, and a revenue target to hit this year."
-      points:
-        - "I tell you which ones a partner would want."
-        - "I describe them in words a partner already uses."
-        - "I help you set up the meeting with a clear ask."
+      help: "You know which disclosures a partner wants, and you walk into the meeting with a clear ask."
     - number: "03"
       title: "Pharma and investors"
       note: "External innovation and family offices"
       pain: "You need an asset your competitors have not found yet."
-      points:
-        - "I bring you science from universities and hospitals before it is a pitch."
-        - "I tell you what is worth your time."
-        - "I help you test the science and the business case, in English or in Mandarin."
+      help: "You see university and hospital science before it is a pitch, and you know what is worth your time."
     - number: "04"
       title: "Life sciences teams"
       note: "Research, tech transfer, business development, and investors"
       wide: true
       pain: "Your team is buried in manual work. The same searches, summaries, and updates take the day."
-      points:
-        - "I help you set up AI agents for the repetitive work."
-        - "Your people keep the judgment and the relationships."
-        - "The agents do the repetitive tasks you already do."
+      help: "Your people keep the judgment and the relationships, and agents take the searches, summaries, and updates."
 
 contact:
   eyebrow: "Contact"

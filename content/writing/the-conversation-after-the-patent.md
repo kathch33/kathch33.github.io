@@ -9,6 +9,4 @@ description: Example draft for the writing section. Not for publication until Ka
 
 The patent isn't the finish line. It's the start of a conversation nobody trained you for.
 
-Good science gets stuck between the people who need each other. I have sat in the chairs where that happens: the bench, pharma business development, strategy, and finance. The useful part is being able to say what the other side is thinking.
-
-Kgence.ai is built around that. The analysis is automated. The relationships stay human.
+I have done that work at the bench, in pharma business development, in strategy, and in finance. I can tell you what the other side is thinking.

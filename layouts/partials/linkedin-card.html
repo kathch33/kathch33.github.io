@@ -1,0 +1,51 @@
+{{- /* Whole card is one link. Action icons are decorative. Path zeros are 1e-9 so Hugo's HTML minifier does not glue them onto the previous number. */ -}}
+<a class="li-card" href="{{ .url }}" target="_blank" rel="noopener noreferrer" aria-label="Katherine Cheng on LinkedIn. {{ .hook }}{{ with .detail }} {{ . }}{{ end }} Opens in a new tab.">
+  <span class="li-top">
+    <img class="li-avatar" src="{{ "images/katherine-cheng.png" | relURL }}" alt="" width="48" height="48">
+    <span class="li-who">
+      <span class="li-name">Katherine Cheng</span>
+      <span class="li-headline">Founder, Kgence.ai | Bridging Science and Business</span>
+      <span class="li-when">
+        <span>{{ .date }}</span>
+        <svg class="li-globe" viewBox="0 0 16 16" width="12" height="12" aria-hidden="true" focusable="false">
+          <circle cx="8" cy="8" r="6.2" fill="none" stroke="currentColor" stroke-width="1.2"/>
+          <ellipse cx="8" cy="8" rx="2.6" ry="6.2" fill="none" stroke="currentColor" stroke-width="1.2"/>
+          <path d="M2.2 8h11.6M3.1 5.2h9.8M3.1 10.8h9.8" fill="none" stroke="currentColor" stroke-width="1.2"/>
+        </svg>
+      </span>
+    </span>
+    <img class="li-mark" src="{{ "icons/linkedin-in.svg" | relURL }}" alt="" width="20" height="20">
+  </span>
+  <span class="li-body">{{ .hook }}{{ with .detail }} {{ . }}{{ end }} <span class="li-more">...see more</span></span>
+  <span class="li-actions" aria-hidden="true">
+    <span class="li-action">
+      <svg viewBox="0 0 24 24" width="18" height="18" focusable="false">
+        <path fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" d="M7 11v11"/>
+        <path fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" d="M15 5.88 14 10h5.83a2 2 1e-9 1e-9 1 1.92 2.56l-2.33 8A2 2 1e-9 1e-9 1 17.5 22H4a2 2 1e-9 1e-9 1-2-2v-8a2 2 1e-9 1e-9 1 2-2h2.76a2 2 1e-9 1e-9 1e-9 1.79-1.11L12 2a3.13 3.13 1e-9 1e-9 1 3 3.88Z"/>
+      </svg>
+      <span>Like</span>
+    </span>
+    <span class="li-action">
+      <svg viewBox="0 0 24 24" width="18" height="18" focusable="false">
+        <path fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" d="M21 15a2 2 1e-9 1e-9 1-2 2H7l-4 4V5a2 2 1e-9 1e-9 1 2-2h14a2 2 1e-9 1e-9 1 2 2z"/>
+      </svg>
+      <span>Comment</span>
+    </span>
+    <span class="li-action">
+      <svg viewBox="0 0 24 24" width="18" height="18" focusable="false">
+        <path fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" d="m2 9 3-3 3 3"/>
+        <path fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" d="M13 18H7a2 2 1e-9 1e-9 1-2-2V6"/>
+        <path fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" d="m22 15-3 3-3-3"/>
+        <path fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" d="M11 6h6a2 2 1e-9 1e-9 1 2 2v10"/>
+      </svg>
+      <span>Repost</span>
+    </span>
+    <span class="li-action">
+      <svg viewBox="0 0 24 24" width="18" height="18" focusable="false">
+        <path fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" d="m22 2-7 20-4-9-9-4Z"/>
+        <path fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" d="M22 2 11 13"/>
+      </svg>
+      <span>Send</span>
+    </span>
+  </span>
+</a>
