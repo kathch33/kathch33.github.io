@@ -1,0 +1,12 @@
+# Add another item under items. Leave links empty when there is no page.
+# SSRN abstract 3286330 is the public paper. MIT CanceRx also lists Katherine Cheng as a co-author.
+# The Journal of Investment Management issue page is behind a login, so it is not linked.
+eyebrow: "Writing and research"
+items:
+  - title: "A Portfolio Approach to Accelerate Therapeutic Innovation in Ovarian Cancer"
+    detail: "In 2019, the Journal of Investment Management published the paper in volume 17, number 2. I am a co-author, with Andrew W. Lo and others."
+    links:
+      - label: "SSRN"
+        url: "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3286330"
+      - label: "MIT CanceRx"
+        url: "https://cancerx.mit.edu/a-portfolio-approach-to-accelerate-therapeutic-innovation-in-ovarian-cancer/"

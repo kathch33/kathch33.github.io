@@ -12,8 +12,5 @@
   <div class="prose">
     {{ .Content }}
   </div>
-  {{- if eq .File.ContentBaseName "about" }}
-  {{ partial "audience-sections.html" . }}
-  {{- end }}
 </article>
 {{ end }}

@@ -23,3 +23,7 @@ hugo server --buildDrafts
 Pushes to `master` run `.github/workflows/hugo.yaml`, which is the official Hugo workflow for GitHub Pages. In the repository settings, Pages has to use **GitHub Actions** as the source, not the `master` branch.
 
 Do not commit the `public/` directory.
+
+## Contact form
+
+The form does not contain an email address. `params.contactFormEndpoint` in `hugo.yaml` is a FormSubmit placeholder until Katherine pastes the alias. The steps are in [AGENTS.md](AGENTS.md).

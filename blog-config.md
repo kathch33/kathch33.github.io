@@ -19,7 +19,7 @@ Settings for the vendored Hugo blog skills in `.agents/skills/`. Voice and facts
 
 - **Posts directory:** content/writing/
 - **Talks directory:** none
-- **Images directory:** static/ (none yet; do not invent portraits)
+- **Images directory:** static/images/ (katherine-cheng.png is the portrait). Logos are static/logos/. Do not use banner.jpg on the page.
 
 ## Publication settings
 
@@ -36,13 +36,13 @@ Settings for the vendored Hugo blog skills in `.agents/skills/`. Voice and facts
 
 ## Social handles
 
-Do not invent handles. LinkedIn, Substack, and the Kgence URL are unconfirmed. See the contact page.
+Do not invent handles or URLs. The home page contact form is FormSubmit. The endpoint placeholder is in hugo.yaml. See AGENTS.md.
 
 ## Topic areas
 
-- The seats where science becomes a deal: bench biology, pharma business development, strategy, finance
-- Scientists, university and hospital tech transfer, pharma external innovation, investors, family offices
-- Do not invent clients, case studies, numbers, or prices
+- Life sciences, human-led agentic AI, and the work of bridging science and business
+- Scientists, hospital and university tech transfer, pharma, biotech, and investors
+- Use only the confirmed biography in AGENTS.md and data/profile.yaml
 
 ## Hashtags
 

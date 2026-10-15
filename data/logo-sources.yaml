@@ -1,0 +1,24 @@
+# Not rendered. Official marks, stored for identification on the home page.
+# Local files are recolored to ink (#121212) on the page background (#f7f5f3).
+# The Moderna file omits the cyan dash row from the Commons SVG so the page has no gradient.
+# Trademarks remain the property of their owners. Use here is identification, not endorsement.
+- name: Moderna
+  file: static/logos/moderna.svg
+  page: https://commons.wikimedia.org/wiki/File:Moderna_logo.svg
+  origin: Moderna investor materials, traced on Wikimedia Commons
+- name: Boston Consulting Group
+  file: static/logos/bcg.svg
+  page: https://commons.wikimedia.org/wiki/File:Boston_Consulting_Group_2020_logo.svg
+  origin: https://www.bcg.com/de-de/ via Wikimedia Commons
+- name: Harvard Business School
+  file: static/logos/hbs.svg
+  page: https://commons.wikimedia.org/wiki/File:Harvard_Business_School.svg
+  origin: Harvard Business School arms, Wikimedia Commons
+- name: The Wharton School
+  file: static/logos/wharton.svg
+  page: https://standards.wharton.upenn.edu/logo/
+  origin: https://standards.wharton.upenn.edu/wp-content/plugins/martech-chupacabra/includes/images/wharton-logo.svg
+- name: University of Pennsylvania
+  file: static/logos/penn.svg
+  page: https://commons.wikimedia.org/wiki/File:University_of_Pennsylvania_wordmark.svg
+  origin: https://www.upenn.edu/about/styleguide-logo-branding via Wikimedia Commons

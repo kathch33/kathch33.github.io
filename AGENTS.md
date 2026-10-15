@@ -14,45 +14,41 @@ If the tool being used has no sub-agents, run the unslop pass as a separate, iso
 
 Katherine Cheng is the founder of Kgence.ai.
 
-Core idea: "Good science gets stuck between the people who need each other."
+Positioning: bridging science and business in life sciences, with human-led agentic AI.
 
-Core claim: "I've sat in every chair where science becomes a deal. I'll tell you what the other side is thinking."
+Kgence.ai is hers. On this site it appears only as "Founder, Kgence.ai". Do not turn the page into a product pitch, and do not link a guessed URL.
 
-Kgence.ai helps good science find the people who need it. The analysis is automated, and the relationships stay human.
-
-Voice: plain, warm, honest. Name the seat, not the logo. "When I was in pharma BD" is the pattern. Say a company name only when it is a confirmed fact, and only once, not as a stack of logos.
-
-No bragging. No credential stacking. No numbers, client names, or prices.
+Voice: a spare advisor. Confident, few words, outcome-focused. Plain and honest. No hype and no cliches. Name the seat when a case needs it. Say a company name only when it is a confirmed fact. Do not publish a fee.
 
 Never use these words: disrupt, revolutionize, game-changer, unlock, leverage, synergy, delve, 10x, thought leader.
 
 Do not invent facts. If a detail is missing, leave a visible `[unconfirmed]` placeholder and an HTML comment that starts with `TODO:`.
 
+The home page publishes the biography she confirmed on 2026-10-14. Those names, dates, and figures are safe to repeat. Do not add organizations, titles, years, headcounts, or dollar figures beyond that page. Unnamed parties stay unnamed: the influenza vaccine company, and the Chinese biotech on the HPV vaccine license.
+
 Known, and safe to say:
 
-- She founded Kgence.ai.
-- Her background spans bench biology, pharma business development, strategy, and finance.
-- Pharma business development was at Moderna. Strategy was at BCG. Titles and years are not confirmed.
-- The finance seat's organization, title, and years are not confirmed.
-- She trained at the University of Pennsylvania, Harvard, and Wharton.
-- She holds biology and finance degrees. Which degree came from which school is not confirmed.
+- She founded Kgence.ai. She is based in Greater Boston. She is bilingual in English and Mandarin Chinese.
+- Moderna, Business Development, August 2021 to April 2026. Individualized Neoantigen Therapy for oncology. She left to build.
+- Boston Consulting Group, Project Leader in the Healthcare Practice, August 2014 to August 2021, and Summer Associate in 2013.
+- Moderna Therapeutics, Business Development and Finance, summer 2017.
+- Penn Medicine, Gene Therapy Program, Dr. Jim Wilson Lab, 2013 to 2014. The program is now REGENXBIO.
+- Pennsylvania SBDC, 2011 to 2013. Vertex Pharmaceuticals, 2012. The Wharton School, M&A research, 2011.
+- HBS Healthcare Alumni Association, Co-Chair of the HBS Healthcare Alum Conference, 2021.
+- Harvard Business School, MBA, 2016 to 2018. University of Pennsylvania, Vagelos Life Sciences and Management program, 2010 to 2014: B.A. Biology from the College and B.S. Economics, Finance, from Wharton.
+- Publication with Dr. Andrew Lo, MIT, Journal of Investment Management, 2019. The title is on the home page.
 
-Audiences, and the line for each (source of truth: `data/audiences.yaml`):
-
-- Scientists: "The patent isn't the finish line. It's the start of a conversation nobody trained you for."
-- Tech transfer offices at universities and hospitals: "You're judged on revenue but staffed for paperwork. The hidden gems were never your fault."
-- Pharma external innovation and investors, including family offices: "The best assets rarely show up in a pitch deck. They're still waiting for someone to ask."
+How she can help, in `data/profile.yaml`: scientists; hospitals and universities; pharma, biotech, and investors. One line and two or three outcomes each, tied to work she has actually done. Not a Kgence pitch.
 
 ## Site structure
 
 Hugo project with custom layouts in `layouts/`. No theme. No theme submodule.
 
-- `/` Home. Hero, three audience cards, short about. Copy for the hero is front matter in `content/_index.md`.
-- `/about/` Biography, then the three audience sections rendered from `data/audiences.yaml`.
+- `/` Home. A short advisor page: positioning, portrait, one proof band, selected work, how she can help, and the contact form. Not a resume. No experience timeline, internships, skills list, or bullet-level history. Copy lives in `data/profile.yaml`. Speaking is `data/speaking.yaml`. Research is `data/press.yaml`. The meta description is front matter in `content/_index.md`. Logo files and their sources are `static/logos/` and `data/logo-sources.yaml`.
+- `/about/` and `/contact/` alias to `/`.
 - `/writing/` Essays. Posts are `content/writing/*.md`. One example post is `draft: true` and must stay a draft until Katherine replaces it and asks for it to be published. Production builds omit drafts, so the public writing page says nothing is published yet.
-- `/contact/` Placeholder names for LinkedIn, Substack, and Kgence.ai. No email form. Do not guess URLs.
 
-Design: calm, warm, unhurried. Lots of whitespace. Newsreader for headlines and quotes, Source Sans 3 for text. Paper background `#f3eee6`, ink `#241f1b`, clay links `#6f3728`. Styles are `assets/css/main.css` plus `static/fonts/faces.css` (font faces stay unminified; Hugo's minifier corrupts `unicode-range`). No JavaScript. Fonts are SIL Open Font License files in `static/fonts/`.
+Design: flat warm off-white `#f7f5f3`, near-black ink `#121212`, hairline `#dcd8d2`. No gradients and no beige panels. Deep green `#4a6b45` for italic words and eyebrows. Teal `#1f6f8b` for links and hover only. Cormorant Garamond for display, Outfit for body, IBM Plex Mono for eyebrows and buttons. Square corners, no shadows. Generous whitespace. One full-bleed black band, for contact. Styles are `assets/css/main.css` plus `static/fonts/faces.css` (font faces stay unminified; Hugo's minifier corrupts `unicode-range`). Fonts are SIL Open Font License files in `static/fonts/`. The only JavaScript is `assets/js/contact.js`. The portrait is `static/images/katherine-cheng.png`. `static/images/banner.jpg` is the old circuit image. Do not put it back on the page. It is a gradient.
 
 ## How to run and build
 
@@ -111,6 +107,26 @@ GitHub Pages has to use source "GitHub Actions", not "Deploy from a branch" / `m
 
 Do not force-push `master` unless Katherine explicitly asks.
 
+## Contact form
+
+Submissions go to Katherine through FormSubmit. The address must not appear in page templates, JavaScript, content files, `hugo.yaml` values, or the built HTML.
+
+`params.contactFormEndpoint` in `hugo.yaml` is the AJAX URL. It is a placeholder until she pastes the alias:
+
+`https://formsubmit.co/ajax/REPLACE_WITH_FORMSUBMIT_ALIAS`
+
+On 2026-10-14 a browser-style POST to `https://formsubmit.co/ajax/kcheng@kgence.ai` was accepted. FormSubmit replied that it sent an activation email. Plain `curl` was blocked by Cloudflare before that.
+
+To finish:
+
+1. Open the FormSubmit message and click Activate Form.
+2. The message after that contains a random-string alias.
+3. Replace the placeholder so the config value is `https://formsubmit.co/ajax/` plus that alias.
+
+If the email never arrives, submit once from a local machine to `https://formsubmit.co/kcheng@kgence.ai` and do not commit that request. Then do the three steps above.
+
+The form sends `_subject` `New question from kathch33.github.io`, `_template` `table`, `_captcha` `false`, and a `_honey` honeypot. Captcha is off so the thank-you can stay on this page. The honeypot is the spam check. `_replyto` is the visitor's email.
+
 ## Preferences learned
 
 - 2026-10-14: Katherine asked for a full history reset of this repo only. `master` is one root commit. Do not force-push again unless she explicitly asks.
@@ -121,3 +137,8 @@ Do not force-push `master` unless Katherine explicitly asks.
 - 2026-10-14: No numbers, client names, or prices anywhere on the site.
 - 2026-10-14: Assumption, not a confirmed preference: the Actions time zone is `America/New_York` because the old site commits used US Eastern. Change it if she wants another zone.
 - 2026-10-14: Site copy is unslopped by a separate sub-agent using `.agents/skills/unslop/SKILL.md` before commit. The authoring agent does not unslop its own draft.
+- 2026-10-14: The public page is an editorial profile in the Kgence visual system, not the earlier paper-and-clay layout and not a LinkedIn clone.
+- 2026-10-15: Katherine reviewed the full biography page and asked for a general advisor page. Selected work is a few anonymized cases from real facts. No resume timeline, internships, skills list, or published metrics she did not ask to show. No gradients. Logo row is monochrome ink. Do not invent testimonials.
+- 2026-10-15: Social proof is one quiet band. Cities are Boston, New York, Chicago, and Philadelphia. Speaking items live in `data/speaking.yaml`. Research lives in `data/press.yaml`. The 2021 conference line may say more than 500 alumni leaders. Do not add a Wharton healthcare alumni title or a vague network line. Do not invent other talks or papers.
+- 2026-10-14: The contact form is on the home page. No email address in the built site. The FormSubmit alias still has to be pasted into `hugo.yaml` after she activates it.
+- 2026-10-14: The portrait is cropped from her LinkedIn header screenshot. The banner is the green-to-teal circuit image. Both live in `static/images/`.

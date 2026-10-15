@@ -1,21 +1,114 @@
 {{ define "main" }}
-<div class="shell home">
-  <section class="hero" aria-labelledby="hero-title">
-    <h1 id="hero-title">{{ .Params.idea }}</h1>
-    <p class="claim">{{ .Params.claim }}</p>
-    <p class="practice">{{ .Params.practice }}</p>
-  </section>
-
-  <section class="for" aria-labelledby="for-title">
-    <h2 id="for-title">Who this is for</h2>
-    {{ partial "audience-cards.html" . }}
-  </section>
-
-  <section class="about-teaser" aria-labelledby="about-teaser-title">
-    <h2 id="about-teaser-title">About</h2>
-    <div class="prose">
-      {{ .Content }}
+{{- $p := hugo.Data.profile -}}
+<section class="hero shell" aria-labelledby="hero-title">
+  <p class="eyebrow"><span class="eyebrow-rule" aria-hidden="true"></span><span>{{ $p.hero.eyebrow }}</span></p>
+  <img class="portrait" src="{{ "images/katherine-cheng.png" | relURL }}" alt="Katherine Cheng" width="155" height="153">
+  <div class="hero-text">
+    <h1 id="hero-title">{{ $p.hero.heading_before }} <em>{{ $p.hero.heading_em }}</em></h1>
+    <p class="dek">{{ $p.hero.dek }}</p>
+    <p class="hero-meta">{{ $p.hero.founder }}. {{ $p.hero.location }}. {{ $p.hero.languages }}.</p>
+    <div class="actions">
+      <a class="btn btn-solid" href="#contact">{{ $p.hero.primary_label }}</a>
+      <a class="btn btn-line" href="#work">{{ $p.hero.secondary_label }}</a>
     </div>
-  </section>
-</div>
+  </div>
+</section>
+
+<section class="proof" aria-label="Background">
+  <div class="shell">
+    <ul class="places">
+      {{- range $p.proof.places }}
+      <li>{{ . }}</li>
+      {{- end }}
+    </ul>
+    <ul class="logo-wall">
+      {{- range $p.logos }}
+      <li><img src="{{ .src | relURL }}" alt="{{ .alt }}" width="{{ .width }}" height="{{ .height }}"></li>
+      {{- end }}
+    </ul>
+    <div class="proof-columns">
+      {{ partial "proof-list.html" hugo.Data.speaking }}
+      {{ partial "proof-list.html" hugo.Data.press }}
+    </div>
+  </div>
+</section>
+
+<section class="section shell" id="work" aria-labelledby="work-title">
+  <p class="eyebrow"><span class="eyebrow-rule" aria-hidden="true"></span><span>{{ $p.work.eyebrow }}</span></p>
+  <h2 id="work-title">{{ $p.work.heading_before }} <em>{{ $p.work.heading_em }}</em></h2>
+  <div class="work-list">
+    {{- range $p.work.cases }}
+    <article class="work-case" aria-labelledby="work-{{ .number }}">
+      <p class="work-no">{{ .number }}</p>
+      <div>
+        <h3 id="work-{{ .number }}">{{ .title }}</h3>
+        <p class="work-seat">{{ .seat }}</p>
+        <p class="work-text">{{ .text }}</p>
+      </div>
+    </article>
+    {{- end }}
+  </div>
+</section>
+
+<section class="section section-end shell" id="help" aria-labelledby="help-title">
+  <p class="eyebrow"><span class="eyebrow-rule" aria-hidden="true"></span><span>{{ $p.help.eyebrow }}</span></p>
+  <h2 id="help-title">{{ $p.help.heading_before }} <em>{{ $p.help.heading_em }}</em></h2>
+  <div class="help-grid">
+    {{- range $p.help.audiences }}
+    <article class="help-card" aria-labelledby="help-{{ .number }}">
+      <p class="help-no">{{ .number }}</p>
+      <h3 id="help-{{ .number }}">{{ .title }}</h3>
+      <p class="help-line">{{ .line }}</p>
+      <ul>
+        {{- range .points }}
+        <li>{{ . }}</li>
+        {{- end }}
+      </ul>
+    </article>
+    {{- end }}
+  </div>
+</section>
+
+<section class="contact-band" id="contact" aria-labelledby="contact-title">
+  <div class="shell">
+    <p class="eyebrow"><span class="eyebrow-rule" aria-hidden="true"></span><span>{{ $p.contact.eyebrow }}</span></p>
+    <h2 id="contact-title">{{ $p.contact.heading_before }} <em>{{ $p.contact.heading_em }}</em></h2>
+    <p class="intro">{{ $p.contact.intro }}</p>
+    <form
+      id="contact-form"
+      class="form"
+      data-endpoint="{{ site.Params.contactFormEndpoint }}"
+      data-thanks="{{ $p.contact.thanks }}"
+      data-error="{{ $p.contact.error }}"
+      data-invalid="{{ $p.contact.invalid }}"
+      data-sending="{{ $p.contact.sending_label }}"
+    >
+      <div class="field">
+        <label for="contact-name">{{ $p.contact.name_label }}</label>
+        <input id="contact-name" name="name" type="text" autocomplete="name" required maxlength="200">
+      </div>
+      <div class="field">
+        <label for="contact-email">{{ $p.contact.email_label }}</label>
+        <input id="contact-email" name="email" type="email" autocomplete="email" required maxlength="200">
+      </div>
+      <div class="field">
+        <label for="contact-question">{{ $p.contact.question_label }}</label>
+        <textarea id="contact-question" name="question" rows="6" required maxlength="5000"></textarea>
+      </div>
+      <div class="honeypot" aria-hidden="true">
+        <label for="contact-honey">Leave this blank</label>
+        <input id="contact-honey" name="_honey" type="text" tabindex="-1" autocomplete="off">
+      </div>
+      <button class="btn btn-solid" type="submit">{{ $p.contact.send_label }}</button>
+      <noscript><p class="noscript">{{ $p.contact.noscript }}</p></noscript>
+    </form>
+    <p id="contact-status" class="form-status" role="status" hidden></p>
+  </div>
+</section>
+{{ end }}
+
+{{ define "scripts" }}
+{{- with resources.Get "js/contact.js" | minify | fingerprint -}}
+<script src="{{ .RelPermalink }}" integrity="{{ .Data.Integrity }}" defer></script>
+{{- end }}
 {{ end }}
