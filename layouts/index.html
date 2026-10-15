@@ -133,7 +133,10 @@
     <p class="eyebrow"><span class="eyebrow-rule" aria-hidden="true"></span><span>{{ $p.contact.eyebrow }}</span></p>
     <h2 id="contact-title">{{ $p.contact.heading_before }} <em>{{ $p.contact.heading_em }}</em>{{ $p.contact.heading_after }}</h2>
     <p class="intro">{{ $p.contact.intro }}</p>
-    {{ partial "linkedin.html" $p.linkedin }}
+    <div class="contact-links">
+      {{ partial "linkedin.html" $p.linkedin }}
+      {{ partial "mail.html" . }}
+    </div>
     <form
       id="contact-form"
       class="form"

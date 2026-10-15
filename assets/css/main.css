@@ -116,7 +116,8 @@ li {
   margin-left: auto;
 }
 
-.linkedin {
+.linkedin,
+.mail {
   display: inline-flex;
   align-items: center;
   gap: 8px;
@@ -129,11 +130,18 @@ li {
   text-decoration: none;
 }
 
-.linkedin:hover {
+.mail {
+  justify-content: center;
+  min-width: 48px;
+}
+
+.linkedin:hover,
+.mail:hover {
   color: var(--teal);
 }
 
-.linkedin-icon {
+.linkedin-icon,
+.mail-icon {
   display: block;
   width: 16px;
   height: 16px;
@@ -702,12 +710,20 @@ h2 em {
   color: var(--muted-on-dark);
 }
 
-.contact-band .linkedin {
+.contact-links {
+  display: flex;
+  align-items: center;
+  gap: 4px;
   margin-top: 28px;
+}
+
+.contact-band .linkedin,
+.contact-band .mail {
   color: var(--paper);
 }
 
-.contact-band .linkedin:hover {
+.contact-band .linkedin:hover,
+.contact-band .mail:hover {
   color: var(--sage);
 }
 
@@ -829,6 +845,10 @@ section[id] {
   scroll-margin-top: 96px;
 }
 
+#contact-name {
+  scroll-margin-top: 160px;
+}
+
 .page {
   padding: 72px 0 112px;
 }
@@ -947,12 +967,15 @@ section[id] {
 }
 
 .site-footer a.linkedin,
-.site-footer a.linkedin:hover {
+.site-footer a.linkedin:hover,
+.site-footer a.mail,
+.site-footer a.mail:hover {
   color: var(--ink);
   text-decoration: none;
 }
 
-.site-footer a.linkedin:hover {
+.site-footer a.linkedin:hover,
+.site-footer a.mail:hover {
   color: var(--teal);
 }
 

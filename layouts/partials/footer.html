@@ -3,6 +3,7 @@
     <p>{{ site.Title }}</p>
     <nav class="footer-nav" aria-label="Footer">
       {{ partial "linkedin.html" hugo.Data.profile.linkedin }}
+      {{ partial "mail.html" . }}
       <a href="{{ "writing/" | relURL }}"{{ if eq .Section "writing" }} aria-current="page"{{ end }}>Writing</a>
     </nav>
   </div>
