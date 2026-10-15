@@ -350,19 +350,62 @@ h2 em {
   color: var(--ink);
 }
 
-.post-grid {
+.insights-layout {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  margin-top: 48px;
-  border-top: 1px solid var(--line);
-  border-left: 1px solid var(--line);
+  grid-template-columns: minmax(0, 1.05fr) minmax(280px, 0.95fr);
+  gap: 64px;
+  align-items: start;
+}
+
+.insights-copy {
+  min-width: 0;
+}
+
+.insights-feed {
+  position: relative;
+  min-width: 0;
+}
+
+.insights-feed::after {
+  content: "";
+  position: absolute;
+  left: 1px;
+  right: 8px;
+  bottom: 1px;
+  height: 56px;
+  background: linear-gradient(to bottom, rgb(247 245 243 / 0), var(--bg));
+  pointer-events: none;
+}
+
+.post-feed {
+  max-height: 560px;
+  overflow-y: auto;
+  border: 1px solid var(--line);
+  padding-bottom: 64px;
+  scrollbar-width: thin;
+  scrollbar-color: var(--line) transparent;
+}
+
+.post-feed::-webkit-scrollbar {
+  width: 4px;
+}
+
+.post-feed::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.post-feed::-webkit-scrollbar-thumb {
+  background: var(--line);
 }
 
 .post-card {
   min-width: 0;
   padding: 32px;
-  border-right: 1px solid var(--line);
   border-bottom: 1px solid var(--line);
+}
+
+.post-card:last-child {
+  border-bottom: 0;
 }
 
 .post-date {
@@ -1054,8 +1097,18 @@ section[id] {
 @media (max-width: 900px) {
   .help-grid,
   .proof-columns,
-  .post-grid {
+  .insights-layout {
     grid-template-columns: 1fr;
+  }
+
+  .post-feed {
+    max-height: none;
+    overflow: visible;
+    padding-bottom: 0;
+  }
+
+  .insights-feed::after {
+    content: none;
   }
 }
 
@@ -1151,6 +1204,16 @@ section[id] {
   .form,
   .btn {
     display: none;
+  }
+
+  .post-feed {
+    max-height: none;
+    overflow: visible;
+    padding-bottom: 0;
+  }
+
+  .insights-feed::after {
+    content: none;
   }
 
   body,

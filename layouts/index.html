@@ -43,26 +43,32 @@
 </section>
 
 <section class="section shell" id="insights" aria-labelledby="insights-title">
-  <p class="eyebrow"><span class="eyebrow-rule" aria-hidden="true"></span><span>{{ $p.insights.eyebrow }}</span></p>
-  <h2 id="insights-title">{{ $p.insights.heading_before }} <em>{{ $p.insights.heading_em }}</em></h2>
-  <p class="intro">{{ $p.insights.schedule }}</p>
-  <p class="intro">{{ $p.insights.philosophy }}</p>
-  <p class="intro insights-offer">{{ $p.insights.offer }}</p>
-  <div class="post-grid">
-    {{- range hugo.Data.linkedin_posts.posts }}
-    <article class="post-card">
-      <p class="post-date">{{ .date }}</p>
-      <h3 class="post-hook">{{ .hook }}</h3>
-      {{- with .detail }}
-      <p class="post-detail">{{ . }}</p>
-      {{- end }}
-      <a class="post-link" href="{{ .url }}" target="_blank" rel="noopener noreferrer" aria-label="Read on LinkedIn, opens in a new tab">Read on LinkedIn</a>
-    </article>
-    {{- end }}
-  </div>
-  <div class="actions">
-    <a class="btn btn-solid" href="{{ $p.linkedin.url }}" target="_blank" rel="noopener noreferrer" aria-label="{{ $p.hero.secondary_label }}, opens in a new tab">{{ $p.hero.secondary_label }}</a>
-    <a class="btn btn-line" href="#contact">{{ $p.hero.primary_label }}</a>
+  <div class="insights-layout">
+    <div class="insights-copy">
+      <p class="eyebrow"><span class="eyebrow-rule" aria-hidden="true"></span><span>{{ $p.insights.eyebrow }}</span></p>
+      <h2 id="insights-title">{{ $p.insights.heading_before }} <em>{{ $p.insights.heading_em }}</em></h2>
+      <p class="intro">{{ $p.insights.schedule }}</p>
+      <p class="intro">{{ $p.insights.philosophy }}</p>
+      <p class="intro insights-offer">{{ $p.insights.offer }}</p>
+      <div class="actions">
+        <a class="btn btn-solid" href="{{ $p.linkedin.url }}" target="_blank" rel="noopener noreferrer" aria-label="{{ $p.hero.secondary_label }}, opens in a new tab">{{ $p.hero.secondary_label }}</a>
+        <a class="btn btn-line" href="#contact">{{ $p.hero.primary_label }}</a>
+      </div>
+    </div>
+    <div class="insights-feed">
+      <div class="post-feed" tabindex="0" aria-label="LinkedIn posts">
+        {{- range hugo.Data.linkedin_posts.posts }}
+        <article class="post-card">
+          <p class="post-date">{{ .date }}</p>
+          <h3 class="post-hook">{{ .hook }}</h3>
+          {{- with .detail }}
+          <p class="post-detail">{{ . }}</p>
+          {{- end }}
+          <a class="post-link" href="{{ .url }}" target="_blank" rel="noopener noreferrer" aria-label="Read on LinkedIn, opens in a new tab">Read on LinkedIn</a>
+        </article>
+        {{- end }}
+      </div>
+    </div>
   </div>
 </section>
 
